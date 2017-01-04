@@ -13,15 +13,6 @@ router.get('/index.html', function(req, res, next) {
       }
     });
 });
-//ptjs
-router.get('/ptjs.html', function(req, res, next) {
-  conn.query("SELECT * FROM nav_url", function (err, result) {
-    if (!err) {
-      res.render("ptjs/ptjs", {navUrl: result});
-    } else {
-      res.json(err);
-    }
-  });
-});
+
 
 module.exports = router;
