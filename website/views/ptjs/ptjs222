@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/ptjs/ptjs.css">
+	<script type="text/javascript" src="../../public/javascript/ptjs/ptjs.js"></script>
+</head>
+<body>
+
+	<div class="banner"></div>
+	<div class="mid_box">
+	<!-- 亿街区简介 -->
+		<div class="box_in_style">
+			<div class="style_title">
+				<span>亿街区简介</span>
+			</div>
+			<div class="style_word">
+                亿街区是一款面向全国中高端社区构建的集住户、物业、商家共通共享的智慧社区服务平台，<br>
+                通过移动端入口和云计算、物联网技术，融合社区基础服务、公共服务及各类O2O垂直服务资源，<br>
+                倾力打造一站式的智慧物业解决方案，
+                帮助用户解决与社区生活相关的各类问题，打造可靠的本地化一站式智慧社区居家服务模式
+			</div>
+			<div class="style_img">
+				<span class="one"></span>
+				<span class="two"></span>
+				<span class="three"></span>
+				<span class="four"></span>
+			</div>
+		</div>
+		<!-- 案例分享 -->
+		<div class="box_in_style">
+			<div class="style_title">
+				<span>案例分享</span>
+			</div>
+			<div class="style_word2">
+                亿街区致力于为物业公司打造智慧物业和提升社区服务品质，提供全方位的智慧物业服务系统、运营服务、数据服务、管理培训和顾问咨询服务等一站式智慧物业解决方案，帮助物业公司改善经营状况，实现提高人工效能、增加经营收益、提高服务品质，快速、高效的实现物业服务管理智慧化，助力智慧物业转型。
+			</div>
+			<a href="#" class="more_case">查看全部案例</a>
+			<div class="case_site">
+				<a href="#">赤峰</a>
+				<a href="#">赤峰</a>
+				<a href="#">赤峰</a>
+				<a href="#">赤峰</a>
+			</div>
+		</div>
+		<!-- 功能介绍 -->
+		<div class="box_in_style">
+			<div class="style_title">
+				<span>功能介绍</span>
+			</div>
+			<div class="style_word">
+                在亿街区智慧物业管理服务平台上可实现在线工程报修、物业缴费、生活服务、在线购物等多种功能。<br>
+                上门维修、物业即时送、摇摇开门、社区养老、社区理财等更加精准的智慧物业管理服务功能也将逐步上线。
+			</div>
+			<div class="style_img2">
+				<div>
+					<span class="function_img1"></span>
+					<span class="function_img2"></span>
+					<span class="function_img3"></span>
+					<span class="function_img4"></span>
+					<span class="function_img5"></span>
+				</div>
+				<div>
+					<span class="function_img6"></span>
+					<span class="function_img7"></span>
+					<span class="function_img8"></span>
+					<span class="function_img9"></span>
+					<span class="function_img10"></span>
+				</div>
+			</div>
+		</div>
+		<!-- 即刻下载 免费体验 -->
+		<div class="box_in_style" style="border-bottom: none;">
+			<div class="style_title">
+				<span>即刻下载 免费体验</span>
+			</div>
+			<div class="style_word">
+                亿街区通过将社区O2O模式与物业服务的有效整合，为用户提供更精准的智慧物业管理。<br>
+                在线缴费，动动手指，告别排队；摇摇开门，智能放行，安全放心；工程报修，轻松报事，快速维修。<br>
+                即刻下载，免费体验"亿"想不到的生活。
+			</div>
+			<div class="style_img3">
+				<span class="one">
+					<i></i>
+				</span>
+				<span class="two">
+					<i></i>
+				</span>
+				<span class="three">
+					<i></i>
+				</span>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

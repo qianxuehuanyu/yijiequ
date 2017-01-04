@@ -1,11 +1,181 @@
-
-body{
-	background: #888;
+*{
+	margin: 0;
+	padding: 0;
 }
 
+body{
+	font: normal 100% "Microsoft Yahei", Arial, Helvetica, sans-serif;
+	color: #232323;
+	background: #fff;
+	font-size: 13px;
+}
+body a{
+	text-decoration: none;
+	color: #666;
+}
 .banner{
 	width: 100%;
 	height: 165px;
 	margin-top: 80px;
-	background: url(../images/ptjs/pingbg.png) center -20px no-repeat;
+	background: url(../../images/ptjs/pingbg.png) center -20px no-repeat;
+}
+
+.mid_box{
+	width: 1136px;
+	margin: 15px auto 50px;
+}
+.box_in_style{
+		border-bottom: 1px solid #dfddde;
+		padding-bottom: 15px;
+}
+.style_title{
+	padding-top: 40px;
+	text-align: center;
+}
+.style_title span{
+	line-height: 45px;
+    font-size: 30px;
+    color: #26d7bd;
+    padding: 2px 30px;
+    margin: 0 auto;
+    border: solid #26d7bd 1px;
+    letter-spacing: 1px;
+}
+.style_word{
+	color: #a3a3a3;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 20px 0;
+    overflow: auto;
+    text-align: center;
+}
+.style_img{
+	text-align: center;
+}
+.style_img span{
+	display: inline-block;
+    background: url(../../images/ptjs/juimg.png) 0 0 no-repeat;
+    width: 205px;
+    height: 200px;
+}
+.style_img span:hover{
+	background-image: url(../../images/ptjs/juimg_h.png);
+}
+.style_img .one{
+	background-position: 27px top;
+}
+.style_img .two{
+	background-position: -180px top;
+}
+.style_img .three{
+	background-position: -385px top;
+}
+.style_img .four{
+	background-position: -590px top;
+}
+.style_word2{
+	width: 690px;
+    padding: 25px 0;
+    line-height: 29px;
+    color: #a3a3a3;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+.more_case{
+	display: block;
+    width: 240px;
+    height: 40px;
+    background: #ebeaea;
+    border-radius: 20px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    color: #626262;
+    text-align: center;
+    line-height: 40px;
+}
+.case_site{
+	text-align: center;
+    padding-bottom: 30px;
+}
+.case_site a{
+	display: inline-block;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    font-size: 30px;
+    border: 3px solid #626262;
+    border-radius: 100%;
+    margin: 0 100px;
+}
+.style_img2{
+	text-align: center;
+}
+.style_img2 span{
+	display: inline-block;
+    width: 145px;
+    height: 135px;
+    background: url(../../images/ptjs/pingfangs_h.png) -40px -40px no-repeat;
+}
+.style_img2 span:hover{
+	background-image: url(../../images/ptjs/pingfangs.png);
+}
+.style_img2 .function_img2{
+	background-position: -165px -40px;
+}
+.style_img2 .function_img3{
+	background-position: -300px -40px;
+}
+.style_img2 .function_img4{
+	background-position: -445px -40px;
+}
+.style_img2 .function_img5{
+	background-position: -610px -40px;
+}
+.style_img2 .function_img6{
+	background-position: -40px -175px;
+}
+.style_img2 .function_img7{
+	background-position: -165px -175px;
+}
+.style_img2 .function_img8{
+	background-position: -300px -175px;
+}
+.style_img2 .function_img9{
+	background-position: -445px -175px;
+}
+.style_img2 .function_img10{
+	background-position: -610px -175px;
+}
+.style_img3{
+	text-align: center;
+}
+.style_img3 span{
+	display: inline-block;
+    background: url(../../images/ptjs/pingdown.png) 0 0 no-repeat;
+    width: 170px;
+    height: 210px;
+    cursor: pointer;
+    margin: 0 100px;
+    position: relative;
+}
+.style_img3 span:hover{
+	background-image: url(../../images/ptjs/pingdown_h.png);
+}
+.style_img3 .two{
+	background-position: -372px 0;
+}
+.style_img3 .three{
+	background-position: -744px 0;
+}
+.style_img3 .now i{
+	display: block;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 190px;
+    top: 15px;
+    padding: 2px;
+    border: #333 solid 1px;
+    background: #FFF url(../../images/ptjs/erweima.jpg) center no-repeat;
 }
