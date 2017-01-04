@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <table border="1">
+      <thead>
+      <tr>
+        <th>id</th>
+        <th>名字</th>
+        <th>年龄</th>
+        <th>3333</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% for(var i = 0;i < navUrl.length;i++){
+        var navUrl = navUrl[i]; %>
+      <tr>
+        <td><%= navUrl.id %></td>
+        <td><%= navUrl.name %></td>
+        <td><%= navUrl.url %></td>
+        <td><%= navUrl.about %></td>
+      </tr>
+      <% } %>
+      </tbody>
+    </table>
   </body>
 </html>

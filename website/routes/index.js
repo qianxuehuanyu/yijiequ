@@ -1,9 +1,27 @@
 var express = require('express');
 var router = express.Router();
 
+const conn = require("./MySqlConnection");
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+//index
+router.get('/index.html', function(req, res, next) {
+    conn.query("SELECT * FROM nav_url", function (err, result) {
+      if (!err) {
+        res.render("index", {navUrl: result});
+      } else {
+        res.json(err);
+      }
+    });
+});
+//ptjs
+router.get('/ptjs.html', function(req, res, next) {
+  conn.query("SELECT * FROM nav_url", function (err, result) {
+    if (!err) {
+      res.render("ptjs/ptjs", {navUrl: result});
+    } else {
+      res.json(err);
+    }
+  });
 });
 
 module.exports = router;
