@@ -12,12 +12,12 @@
       </thead>
       <tbody>
       <% for(var i = 0;i < navUrl.length;i++){
-        var navUrl = navUrl[i]; %>
+       var nU = navUrl[i]; %>
       <tr>
-        <td><%= navUrl.id %></td>
-        <td><%= navUrl.name %></td>
-        <td><%= navUrl.url %></td>
-        <td><%= navUrl.about %></td>
+        <td><%= nU.id %></td>
+        <td><%= nU.name %></td>
+        <td><%= nU.url %></td>
+        <td><%= nU.about %></td>
       </tr>
       <% } %>
       </tbody>

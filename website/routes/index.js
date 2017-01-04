@@ -7,12 +7,11 @@ const conn = require("./MySqlConnection");
 router.get('/index.html', function(req, res, next) {
     conn.query("SELECT * FROM nav_url", function (err, result) {
       if (!err) {
-        res.render("index", {navUrl: result});
+      	res.render("./index", {title:"亿街区官方网站",navUrl: result});
       } else {
         res.json(err);
       }
     });
 });
-
 
 module.exports = router;
