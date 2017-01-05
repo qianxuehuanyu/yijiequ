@@ -1,13 +1,15 @@
-<% include ../header.ejs %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../../public/stylesheets/ptjs/ptjs.css">
+	<script type="text/javascript" src="../../public/lib/jquery-3.1.1.min.js"></script>
 
-    <!--各页面自己的css和js-->
-    <link rel="stylesheet" type="text/css" href="/public/stylesheets/ptjs/ptjs.css">
-    <script type="text/javascript" src="/public/lib/jquery-3.1.1.min.js"></script>
+</head>
+<body>
 
-<% include ../nav.ejs %>
-
-    <!--页面主体-->
-<div class="banner"></div>
+	<div class="banner"></div>
 	<div class="mid_box">
 	<!-- 亿街区简介 -->
 		<div class="box_in_style">
@@ -93,7 +95,6 @@
 		</div>
 
 	</div>
-
-
-<script type="text/javascript" src="/public/javascripts/ptjs/ptjs.js"></script>
-<% include ../footer.ejs %>
+<script type="text/javascript" src="../../public/javascripts/ptjs/ptjs.js"></script>
+</body>
+</html>
