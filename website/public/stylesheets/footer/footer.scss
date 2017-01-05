@@ -51,7 +51,25 @@
             .erweima{
                 width: 122px;
                 height: 122px;
+
+            }
+            .erweima_app{
                 display: none;
+                position: absolute;
+                top:20px;
+                right: -20px;
+            }
+            .erweima_weix{
+                display: none;
+                position: absolute;
+                top:20px;
+                right: 60px;
+            }
+            .erweima_weib{
+                display: none;
+                position: absolute;
+                top:20px;
+                right: 130px;
             }
         }
     }
