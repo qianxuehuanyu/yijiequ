@@ -8,9 +8,26 @@
 #yjqxw .yjqxw-banner {
     width: 100%;
     height: 160px;
-    background: url('../../images/yjqxw/newsbg.png') 50% 50% no-repeat;
+    background: url(../newsbg.png) 50% 50% no-repeat;
     background-size: cover;
 }
+
+@media only screen and (max-width: 50em) {
+    #yjqxw .yjqxw-banner {
+        background: url(../newsbg.png) no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+
+}
+
+@media only screen and (max-width: 30em) {
+
+}
+
 #yjqxw .news-category {
     width: 80%;
     margin: 40px auto 60px;
@@ -39,6 +56,20 @@
 #yjqxw .news-category .news-category-item:nth-last-child(1) {
     margin-right: 0;
 }
+
+@media only screen and (max-width: 50em) {
+
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+
+}
+
+@media only screen and (max-width: 30em) {
+
+}
+
+
 #yjqxw .news-articles {
     width: 80%;
     margin: 0 auto;
@@ -82,6 +113,21 @@
     padding: 0 12px 0 6px;
     color: #f6a63f;
 }
+
+@media only screen and (max-width: 50em) {
+    #yjqxw .news-articles {
+
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+
+}
+
+@media only screen and (max-width: 30em) {
+
+}
+
 
 .clearfix:before, .clearfix:after {
     display: table;
