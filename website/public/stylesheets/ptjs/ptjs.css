@@ -108,6 +108,10 @@ body a{
     border-radius: 100%;
     margin: 0 100px;
 }
+.case_site a:hover{
+	color: #26d7bd;
+	border-color: #26d7bd;
+}
 .style_img2{
 	text-align: center;
 }
