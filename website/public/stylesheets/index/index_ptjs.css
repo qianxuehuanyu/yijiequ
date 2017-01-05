@@ -56,11 +56,11 @@ a {
         height: 148px;
         margin: 20px auto; }
       #ptjs .pyjsConter .threeBlock_s .threeBlock .threeBlock1Log1 {
-      	  background: url("/website/public/images/index/index_ptjs/ItemOne.png") no-repeat; }
+      	  background: url("/images/index/index_ptjs/ItemOne.png") no-repeat; }
       #ptjs .pyjsConter .threeBlock_s .threeBlock .threeBlock1Log2 {
-      	background: url("/website/public/images/index/index_ptjs/ItemTwo.png") no-repeat; }
+      	background: url("/images/index/index_ptjs/ItemTwo.png") no-repeat; }
       #ptjs .pyjsConter .threeBlock_s .threeBlock .threeBlock1Log3 {
-      	background: url("/website/public/images/index/index_ptjs/ItemThd.png") no-repeat; }
+      	background: url("/images/index/index_ptjs/ItemThd.png") no-repeat; }
       #ptjs .pyjsConter .threeBlock_s .threeBlock h3 {
         color: #26d7bd;
         margin: 20px auto 0;
@@ -69,11 +69,11 @@ a {
         text-align: center;
         font-weight: bold; }
     #ptjs .pyjsConter .threeBlock1:hover .threeBlock1Log1 {
-    background: url("/website/public/images/index/index_ptjs/ItemOne_h.png") no-repeat; }
+    background: url("/images/index/index_ptjs/ItemOne_h.png") no-repeat; }
     #ptjs .pyjsConter .threeBlock2:hover .threeBlock1Log2 {
-    background: url("/website/public/images/index/index_ptjs/ItemTwo_h.png") no-repeat; }
+    background: url("/images/index/index_ptjs/ItemTwo_h.png") no-repeat; }
     #ptjs .pyjsConter .threeBlock3:hover .threeBlock1Log3 {
-    background: url("/website/public/images/index/index_ptjs/ItemThd_h.png") no-repeat; }
+    background: url("/images/index/index_ptjs/ItemThd_h.png") no-repeat; }
     #ptjs .pyjsConter .threeBlock1:hover h3 {
       color: #ec6c00; }
     #ptjs .pyjsConter .threeBlock2:hover h3 {
@@ -95,10 +95,10 @@ a {
       font-size: 18px; }
     #ptjs .pyjsConter .down .Android {
       float: left;
-      background: url("/website/public/images/index/index_ptjs/erweima.jpg") no-repeat; }
+      background: url("/images/index/index_ptjs/erweima.jpg") no-repeat; }
     #ptjs .pyjsConter .down .IOS {
       float: right;
-      background: url("/website/public/images/index/index_ptjs/erweimaxp.jpg") no-repeat; }
+      background: url("/images/index/index_ptjs/erweimaxp.jpg") no-repeat; }
     #ptjs .pyjsConter .Android:hover {
       color: #ec6c00; }
     #ptjs .pyjsConter .IOS:hover {
