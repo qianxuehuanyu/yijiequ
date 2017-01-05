@@ -39,7 +39,21 @@
       padding: 10px; }
       #footer_background .foot_right li .erweima {
         width: 122px;
-        height: 122px;
-        display: none; }
+        height: 122px; }
+      #footer_background .foot_right li .erweima_app {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: -20px; }
+      #footer_background .foot_right li .erweima_weix {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 60px; }
+      #footer_background .foot_right li .erweima_weib {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 130px; }
 
 /*# sourceMappingURL=footer.css.map */
