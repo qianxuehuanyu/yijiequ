@@ -1,17 +1,16 @@
 <% include ../header.ejs %>
-<link rel="stylesheet" href="stylesheet/ejqxw/ejqxw.css">
-
+<link rel="stylesheet" href="/stylesheets/ejqxw/ejqxw.css">
+<script src="/lib/jquery-3.1.1.min.js"></script>
+<script src="/javascripts/yjqxw/yjqxw.js"></script>
 <% include ../nav.ejs %>
 
 <div id="yjqxw">
     <div class="yjqxw-banner"></div>
     <ul class="news-category clearfix">
+        <img src="/images/yjqxw/"
         <!-- TODO js获取news-category-item 类的宽度-->
         <li class="news-category-item news-scaning is-active">
             <a href="#">全部</a>
-        </li>
-        <li class="news-category-item">
-            <a href="#">公司动态</a>
         </li>
     </ul>
     <ul class="news-articles">
@@ -26,5 +25,6 @@
         </li>
     </ul>
 </div>
+
 
 <% include ../footer.ejs %>

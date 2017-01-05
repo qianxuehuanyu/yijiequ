@@ -1,0 +1,36 @@
+body{
+  font-family: "Microsoft YaHei";
+}
+#yxal{
+  width: 1243px;
+  background: #fff;
+  .yxalConter{
+    width: 1136px;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .yxal_title{
+      text-align: center;
+      h1{
+        color:#26d7bd;
+        margin: 23px 0 15px 0;
+        font-size: 35px;
+        letter-spacing: 5px;
+        line-height: 40px;
+      }
+    }
+    .yxal_block{
+      a{
+        display: block;
+        width: 358px;
+        height: 250px;
+        margin: 0 8px 10px;
+        float: left;
+        background-size: cover;
+        position: relative;
+      }
+    }
+  }
+}
