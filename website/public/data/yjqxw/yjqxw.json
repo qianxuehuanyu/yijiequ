@@ -1,0 +1,80 @@
+{
+	"classes": [
+		"公司动态",
+		"媒体报道",
+		"市场活动"
+	],
+	"articles":[
+			{
+				"title": "亿街区发力报事报修功能 务满意度",
+				"classify": "媒体报道",
+				"date": "2016-11-21",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999064804.jpg",
+				"content": ""
+			},
+			{
+				"title": "亿街区&达美盛智慧基础设施生态研讨会圆满落幕",
+				"classify": "公司动态",
+				"date": "2016-11-18",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999759391.jpg",
+				"content": ""
+			},
+			{
+				"title": "亿街区&达美盛联合承办 智慧基础设施生态研讨会落幕",
+				"classify": "媒体报道",
+				"date": "2016-11-16",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999641220.jpg",
+				"content": ""
+			},
+			{
+				"title": "规范品质核查流程 为物业工作提供专业保障",
+				"classify": "公司动态",
+				"date": "2016-12-01",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480998901115.jpg",
+				"content": ""
+			},
+			{
+				"title": "6成社区物业费收缴率不足8成收费难困境智慧社区来破？",
+				"classify": "",
+
+				"date": "2016-11-08",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999522224.jpg",
+				"content": "公司动态"
+			},
+			{
+				"title": "物业“收费难”困境怎么破？答案找到了！",
+				"classify": "媒体报道",
+				"date": "2016-11-07",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999406354.jpg",
+				"content": ""
+			},
+			{
+				"title": "亿街区捷报频传，与锦鸿物业多项目达成合作",
+				"classify": "",
+				"date": "2016-10-27",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999160117.jpg",
+				"content": ""
+			},
+			{
+				"title": "购物袋来了",
+				"classify": "市场活动",
+				"date": "2016-10-12",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999232911.jpg",
+				"content": ""
+			},
+			{
+				"title": "秒杀",
+				"classify": "市场活动",
+				"date": "2016-10-12",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999281744.jpg",
+				"content": ""
+			},
+			{
+				"title": "2016-10-12",
+				"classify": "市场活动",
+				"date": "新人尝鲜",
+				"imgURL": "https://www.bjyijiequ.com/articledetial/1480999313066.jpg",
+				"content": ""
+			}
+		]
+}
