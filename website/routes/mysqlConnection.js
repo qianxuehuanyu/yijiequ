@@ -5,10 +5,10 @@
 const mysql = require("mysql");
 
 var conn = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "yjq"
+    host: "sql.w108.vhostgo.com",
+    user: "gavenmysql",
+    password: "mysql_123456",
+    database: "gavenmysql"
 });
 
 conn.connect(function (err) {
