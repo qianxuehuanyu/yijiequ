@@ -5,8 +5,9 @@ const conn = require("./MySqlConnection");
 /* GET home page. */
 //index
 router.get('/index.html', function(req, res, next) {
-	var indexContent={
+	var indexcontent={
 		title:"亿街区官方网站",
+    select:0,
 		navUrl:{},
 		asideUrl:{},
 		footerUrl:{},
@@ -14,31 +15,55 @@ router.get('/index.html', function(req, res, next) {
 		uploadHzhb:{},
 		uploadYxal:{}
 	};
+  var connquery_count=0;
     conn.query("SELECT * FROM nav_url", function (err, result) {
       if (!err) {
-      	indexContent.navUrl=result;
-      }else{console.log(err)}});
+      	indexcontent.navUrl=result;
+        indexcontent.select++;
+      }else{console.log(err)}
+      connquery_count++;
+    });
     conn.query("SELECT * FROM aside_url", function (err, result) {
       if (!err) {
-      	indexContent.asideUrl=result;
-      }else{console.log(err)}});
+      	indexcontent.asideUrl=result;
+        indexcontent.select++;
+      }else{console.log(err)}
+    connquery_count++;
+    });
     conn.query("SELECT * FROM footer_url", function (err, result) {
       if (!err) {
-      	indexContent.footerUrl=result;
-      }else{console.log(err)}});
+      	indexcontent.footerUrl=result;
+        indexcontent.select++;
+      }else{console.log(err)}
+      connquery_count++;
+    });
 	conn.query("SELECT * FROM index_url", function (err, result) {
       if (!err) {
-      	indexContent.indexUrl=result;
-      }else{console.log(err)}});
+      	indexcontent.indexUrl=result;
+        indexcontent.select++;
+      }else{console.log(err)}
+      connquery_count++;
+    });
 	conn.query("SELECT * FROM upload_hzhb", function (err, result) {
       if (!err) {
-      	indexContent.uploadHzhb=result;
-      }else{console.log(err)}});
+      	indexcontent.uploadHzhb=result;
+        indexcontent.select++;
+      }else{console.log(err)}
+      connquery_count++;
+    });
 	conn.query("SELECT * FROM upload_yxal", function (err, result) {
       if (!err) {
-      	indexContent.uploadYxal=result;
-      }else{console.log(err)}});
-	res.render("./index",indexContent);
+      	indexcontent.uploadYxal=result;
+        indexcontent.select++;
+      }else{console.log(err)}
+      connquery_count++;
+    });
+    var sqlselect=setInterval(function(){
+      if(connquery_count==6){
+        clearInterval(sqlselect);
+        res.render("./index",{indexContent:indexcontent});
+      }
+    },100);
 });
 
 module.exports = router;
