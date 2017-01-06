@@ -1,0 +1,37 @@
+<div id="hzhb">
+    <h1>合作伙伴</h1>
+    <h4>部分入驻商家及合作伙伴</h4>
+    <p>目前已有60余家行业客户入驻亿街区平台，合作伙伴均为行业内领军者，涉及在线购物、家政服务、健康咨询、家电维修、出行旅游等多个品类</p>
+    <ul class="shangjia">
+       <li class="suoyousj">所有商家</li>
+       <li class="hezuosj">合作商家</li>
+       <li class="wuyeqy">物业企业</li>
+    </ul>
+    <ul class="suoyou">
+        <% for (let i=0;i<Content.uploadHzhb.length;i++){%>
+        <li><a href="/hzhb.html">
+                <img src="<%= Content.uploadHzhb[i].image_href %>" alt="<%= Content.uploadHzhb[i].name %>">
+            </a></li>
+        <% } %>
+    </ul>
+
+    <ul class="hezuo">
+        <% for (let i=0;i<Content.uploadHzhb.length;i++){
+                if (Content.uploadHzhb[i].kind=="合作商家"){
+        %>
+        <li><a href="/hzhb.html">
+                <img src="<%= Content.uploadHzhb[i].image_href %>" alt="<%= Content.uploadHzhb[i].name %>">
+            </a></li>
+        <% }} %>
+    </ul>
+
+    <ul class="wuye">
+        <% for (let i=0;i<Content.uploadHzhb.length;i++){
+            if(Content.uploadHzhb[i].kind=="物业企业"){
+        %>
+        <li><a href="/hzhb.html">
+                <img src="<%= Content.uploadHzhb[i].image_href %>" alt="<%= Content.uploadHzhb[i].name %>">
+            </a></li>
+        <% }} %>
+    </ul>
+</div>
