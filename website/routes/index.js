@@ -7,10 +7,9 @@ const conn = require("./MySqlConnection");
 router.get('/index.html', function(req, res, next) {
 	var indexcontent={
 		title:"亿街区官方网站",
-    select:0,
 		navUrl:{},
-		asideUrl:{},
 		footerUrl:{},
+    selectCount:0,
 		indexUrl:{},
 		uploadHzhb:{},
 		uploadYxal:{}
@@ -19,49 +18,42 @@ router.get('/index.html', function(req, res, next) {
     conn.query("SELECT * FROM nav_url", function (err, result) {
       if (!err) {
       	indexcontent.navUrl=result;
-        indexcontent.select++;
+        indexcontent.selectCount++;
       }else{console.log(err)}
       connquery_count++;
-    });
-    conn.query("SELECT * FROM aside_url", function (err, result) {
-      if (!err) {
-      	indexcontent.asideUrl=result;
-        indexcontent.select++;
-      }else{console.log(err)}
-    connquery_count++;
     });
     conn.query("SELECT * FROM footer_url", function (err, result) {
       if (!err) {
       	indexcontent.footerUrl=result;
-        indexcontent.select++;
+        indexcontent.selectCount++;
       }else{console.log(err)}
       connquery_count++;
     });
-	conn.query("SELECT * FROM index_url", function (err, result) {
+	  conn.query("SELECT * FROM index_url", function (err, result) {
       if (!err) {
       	indexcontent.indexUrl=result;
-        indexcontent.select++;
+        indexcontent.selectCount++;
       }else{console.log(err)}
       connquery_count++;
     });
-	conn.query("SELECT * FROM upload_hzhb", function (err, result) {
+	  conn.query("SELECT * FROM upload_hzhb", function (err, result) {
       if (!err) {
       	indexcontent.uploadHzhb=result;
-        indexcontent.select++;
+        indexcontent.selectCount++;
       }else{console.log(err)}
       connquery_count++;
     });
-	conn.query("SELECT * FROM upload_yxal", function (err, result) {
+	  conn.query("SELECT * FROM upload_yxal", function (err, result) {
       if (!err) {
       	indexcontent.uploadYxal=result;
-        indexcontent.select++;
+        indexcontent.selectCount++;
       }else{console.log(err)}
       connquery_count++;
     });
     var sqlselect=setInterval(function(){
-      if(connquery_count==6){
+      if(connquery_count==5){
         clearInterval(sqlselect);
-        res.render("./index",{indexContent:indexcontent});
+        res.render("./index",{Content:indexcontent});
       }
     },100);
 });
