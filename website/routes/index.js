@@ -38,7 +38,7 @@ router.get('/index.html', function(req, res, next) {
       if (!err) {
       	indexContent.uploadYxal=result;
       }else{console.log(err)}});
-	res.render("./index",indexContent);
+		res.render("./index",indexContent);
 });
 
 module.exports = router;
