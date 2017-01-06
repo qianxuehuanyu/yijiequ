@@ -1,0 +1,25 @@
+
+<p><%= Content.selectCount%></p>
+<ul>
+    <% for (let i=0;i<Content.indexUrl.length;i++){
+        var inindexurl=Content.indexUrl[i];
+    %>
+    <li><%= inindexurl.name %> </li>
+    <% } %>
+    <li>123</li>
+</ul>
+
+
+<ul>
+    <% for (let i=0;i<Content.uploadHzhb.length;i++){%>
+    <li><%= Content.uploadHzhb[i].name %> </li>
+    <% } %>
+    <li>123</li>
+</ul>
+
+<ul>
+    <% for (let i=0;i<Content.uploadYxal.length;i++){%>
+    <li><%= Content.uploadYxal[i].title %> </li>
+    <% } %>
+    <li>123</li>
+</ul>
