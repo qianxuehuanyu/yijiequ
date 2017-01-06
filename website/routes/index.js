@@ -8,7 +8,6 @@ router.get('/index.html', function(req, res, next) {
 	var indexcontent={
 		title:"亿街区官方网站",
 		navUrl:{},
-		asideUrl:{},
 		footerUrl:{},
     selectCount:0,
 		indexUrl:{},
@@ -19,13 +18,6 @@ router.get('/index.html', function(req, res, next) {
     conn.query("SELECT * FROM nav_url", function (err, result) {
       if (!err) {
       	indexcontent.navUrl=result;
-        indexcontent.selectCount++;
-      }else{console.log(err)}
-      connquery_count++;
-    });
-    conn.query("SELECT * FROM aside_url", function (err, result) {
-      if (!err) {
-      	indexcontent.asideUrl=result;
         indexcontent.selectCount++;
       }else{console.log(err)}
       connquery_count++;
@@ -59,7 +51,7 @@ router.get('/index.html', function(req, res, next) {
       connquery_count++;
     });
     var sqlselect=setInterval(function(){
-      if(connquery_count==6){
+      if(connquery_count==5){
         clearInterval(sqlselect);
         res.render("./index",{Content:indexcontent});
       }

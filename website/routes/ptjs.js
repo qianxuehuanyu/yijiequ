@@ -10,9 +10,8 @@ router.get('/ptjs.html', function(req, res, next) {
 	var ptjscontent={
 		title:"亿街区官方网站",
 		navUrl:{},
-		asideUrl:{},
 		footerUrl:{},
-    	selectCount:0,
+  	selectCount:0,
 		cityList:{},
 		ptjsUrl:{}
 	};
@@ -20,13 +19,6 @@ router.get('/ptjs.html', function(req, res, next) {
   	conn.query("SELECT * FROM nav_url", function (err, result) {
       if (!err) {
       	ptjscontent.navUrl=result;
-        ptjscontent.selectCount++;
-      }else{console.log(err)}
-      connquery_count++;
-    });
-    conn.query("SELECT * FROM aside_url", function (err, result) {
-      if (!err) {
-      	ptjscontent.asideUrl=result;
         ptjscontent.selectCount++;
       }else{console.log(err)}
       connquery_count++;
@@ -54,7 +46,7 @@ router.get('/ptjs.html', function(req, res, next) {
     connquery_count++;
   });
   var sqlselect=setInterval(function(){
-      if(connquery_count==5){
+      if(connquery_count==4){
         clearInterval(sqlselect);
         res.render("./ptjs/ptjs", {Content: ptjscontent});
       }
