@@ -11,8 +11,8 @@ router.get('/index.html', function(req, res, next) {
 		asideUrl:{},
 		footerUrl:{},
 		indexUrl:{},
-		indexHzhb:{},
-		indexYxal:{}
+		uploadHzhb:{},
+		uploadYxal:{}
 	};
     conn.query("SELECT * FROM nav_url", function (err, result) {
       if (!err) {
@@ -30,17 +30,13 @@ router.get('/index.html', function(req, res, next) {
       if (!err) {
       	indexContent.indexUrl=result;
       }else{console.log(err)}});
-	conn.query("SELECT * FROM index_hzhb", function (err, result) {
+	conn.query("SELECT * FROM upload_hzhb", function (err, result) {
       if (!err) {
-      	indexContent.indexHzhb=result;
+      	indexContent.uploadHzhb=result;
       }else{console.log(err)}});
-	conn.query("SELECT * FROM index_yxal", function (err, result) {
+	conn.query("SELECT * FROM upload_yxal", function (err, result) {
       if (!err) {
-      	indexContent.indexYxal=result;
-      }else{console.log(err)}});
-	conn.query("SELECT * FROM index_hzhb", function (err, result) {
-      if (!err) {
-      	indexContent.indexHzhb=result;
+      	indexContent.uploadYxal=result;
       }else{console.log(err)}});
 	res.render("./index",indexContent);
 });
