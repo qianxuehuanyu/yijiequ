@@ -14,7 +14,7 @@ var index = require('./routes/index');
 var ptjs = require('./routes/ptjs');
 var users = require('./routes/users');
 var yjqxw = require('./routes/yjqxw');
-// var yxal = require('./routes/yxal');
+var yxal = require('./routes/yxal');
 
 var app = express();
 
@@ -38,7 +38,7 @@ app.use('/', index);
 // app.use('/', jmhz);
 app.use('/', ptjs);
 app.use('/', yjqxw);
-// app.use('/', yxal);
+app.use('/', yxal);
 
 app.use('/users', users);
 
