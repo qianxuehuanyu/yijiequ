@@ -5,7 +5,7 @@ const conn = require("./MySqlConnection");
 /* GET home page. */
 //fgsq
 router.post('/PtjsLinkToYxal', function(req, res, next) {
-	console.log(req.displayCity);
+	console.log(req.body.displayCity);
   	res.render("./ptjs/PtjsLinkToYxal.html", {displayCity: req.displayCity});       
 });
 
