@@ -5,6 +5,7 @@ const conn = require("./MySqlConnection");
 /* GET home page. */
 //fgsq
 router.post('/PtjsLinkToYxal', function(req, res, next) {
+	console.log(req.displayCity);
   	res.render("./ptjs/PtjsLinkToYxal.html", {displayCity: req.displayCity});       
 });
 
@@ -13,6 +14,7 @@ router.get('/ptjs/PtjsLinkToYxal.html', function(req, res, next) {
 	var linkTocontent={
 		title:"亿街区官方网站",
 		navUrl:{},
+		navTitle:"yxal",
 		footerUrl:{},
   		selectCount:0,
 		cityList:{},
