@@ -5,7 +5,7 @@ const conn = require("./MySqlConnection");
 /* GET home page. */
 //index
 router.get('/index.html', function(req, res, next) {
-	var indexContent={
+	var indexcontent={
 		title:"亿街区官方网站",
 		navUrl:{},
 		asideUrl:{},
@@ -16,29 +16,29 @@ router.get('/index.html', function(req, res, next) {
 	};
     conn.query("SELECT * FROM nav_url", function (err, result) {
       if (!err) {
-      	indexContent.navUrl=result;
+      	indexcontent.navUrl=result;
       }else{console.log(err)}});
     conn.query("SELECT * FROM aside_url", function (err, result) {
       if (!err) {
-      	indexContent.asideUrl=result;
+      	indexcontent.asideUrl=result;
       }else{console.log(err)}});
     conn.query("SELECT * FROM footer_url", function (err, result) {
       if (!err) {
-      	indexContent.footerUrl=result;
+      	indexcontent.footerUrl=result;
       }else{console.log(err)}});
 	conn.query("SELECT * FROM index_url", function (err, result) {
       if (!err) {
-      	indexContent.indexUrl=result;
+      	indexcontent.indexUrl=result;
       }else{console.log(err)}});
 	conn.query("SELECT * FROM upload_hzhb", function (err, result) {
       if (!err) {
-      	indexContent.uploadHzhb=result;
+      	indexcontent.uploadHzhb=result;
       }else{console.log(err)}});
 	conn.query("SELECT * FROM upload_yxal", function (err, result) {
       if (!err) {
-      	indexContent.uploadYxal=result;
+      	indexcontent.uploadYxal=result;
       }else{console.log(err)}});
-	res.render("./index",indexContent);
+	res.render("./index",{indexContent:indexcontent});
 });
 
 module.exports = router;
