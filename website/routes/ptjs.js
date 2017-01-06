@@ -6,21 +6,14 @@ const conn = require("./MySqlConnection");
 //ptjs
 
 router.get('/ptjs.html', function(req, res, next) {
-	var ptjscontent={
-		title:"亿街区官方网站",
-		select:0,
-		navUrl: {},
-		cityList:{},
-		ptjsUrl:{}
-	};
-	var connquery_count=0;
   conn.query("SELECT * FROM nav_url", function (err, result) {
     if (!err) {
-    	ptjscontent.navUrl=result;
-    	ptjscontent.select++;
-    } else {console.log(err);}
-    connquery_count++;
+      res.render("./ptjs/ptjs", {title:"亿街区官方网站",navUrl: result});
+    } else {
+      res.json(err);
+    }
   });
+<<<<<<< HEAD
   conn.query("SELECT * FROM ptjs_url", function (err, result) {
     if (!err) {
     	ptjscontent.ptjsUrl=result;
@@ -41,6 +34,8 @@ router.get('/ptjs.html', function(req, res, next) {
         res.render("./ptjs/ptjs", {Content: ptjscontent});
       }
     },100);
+=======
+>>>>>>> 71d87d6be52ea68414135d2dfa3040e60d757613
 });
 
 module.exports = router;

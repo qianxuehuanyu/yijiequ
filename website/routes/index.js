@@ -5,9 +5,8 @@ const conn = require("./MySqlConnection");
 /* GET home page. */
 //index
 router.get('/index.html', function(req, res, next) {
-	var indexcontent={
+	var indexContent={
 		title:"亿街区官方网站",
-    select:0,
 		navUrl:{},
 		asideUrl:{},
 		footerUrl:{},
@@ -15,44 +14,29 @@ router.get('/index.html', function(req, res, next) {
 		uploadHzhb:{},
 		uploadYxal:{}
 	};
-  var connquery_count=0;
     conn.query("SELECT * FROM nav_url", function (err, result) {
       if (!err) {
-      	indexcontent.navUrl=result;
-        indexcontent.select++;
-      }else{console.log(err)}
-      connquery_count++;
-    });
+      	indexContent.navUrl=result;
+      }else{console.log(err)}});
     conn.query("SELECT * FROM aside_url", function (err, result) {
       if (!err) {
-      	indexcontent.asideUrl=result;
-        indexcontent.select++;
-      }else{console.log(err)}
-    connquery_count++;
-    });
+      	indexContent.asideUrl=result;
+      }else{console.log(err)}});
     conn.query("SELECT * FROM footer_url", function (err, result) {
       if (!err) {
-      	indexcontent.footerUrl=result;
-        indexcontent.select++;
-      }else{console.log(err)}
-      connquery_count++;
-    });
+      	indexContent.footerUrl=result;
+      }else{console.log(err)}});
 	conn.query("SELECT * FROM index_url", function (err, result) {
       if (!err) {
-      	indexcontent.indexUrl=result;
-        indexcontent.select++;
-      }else{console.log(err)}
-      connquery_count++;
-    });
+      	indexContent.indexUrl=result;
+      }else{console.log(err)}});
 	conn.query("SELECT * FROM upload_hzhb", function (err, result) {
       if (!err) {
-      	indexcontent.uploadHzhb=result;
-        indexcontent.select++;
-      }else{console.log(err)}
-      connquery_count++;
-    });
+      	indexContent.uploadHzhb=result;
+      }else{console.log(err)}});
 	conn.query("SELECT * FROM upload_yxal", function (err, result) {
       if (!err) {
+<<<<<<< HEAD
       	indexcontent.uploadYxal=result;
         indexcontent.select++;
       }else{console.log(err)}
@@ -64,6 +48,11 @@ router.get('/index.html', function(req, res, next) {
         res.render("./index",{Content:indexcontent});
       }
     },100);
+=======
+      	indexContent.uploadYxal=result;
+      }else{console.log(err)}});
+		res.render("./index",indexContent);
+>>>>>>> 71d87d6be52ea68414135d2dfa3040e60d757613
 });
 
 module.exports = router;
