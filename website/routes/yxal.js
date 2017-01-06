@@ -40,7 +40,7 @@ router.get('/yxal.html', function(req, res, next) {
   var sqlselect=setInterval(function(){
       if(connquery_count==3){
         clearInterval(sqlselect);
-        res.render("./yxal/yxal.html", {Content: yxalcontent});
+        res.render("./yxal/yxal", {Content: yxalcontent});
       }
     },100);
 });
