@@ -3,18 +3,18 @@
 <div id="header">
   <div class="margin_top">
     <div class="nav">
-      <a href="#">
+
+      <a href="/index.html">
         <img class="log" src="/images/header/logo.png">
       </a>
       <ul>
-        <li><a href="#">平台介绍</a></li>
-        <li><a href="#">平台介绍</a></li>
-        <li><a href="#">平台介绍</a></li>
-        <li><a href="#">平台介绍</a></li>
-        <li><a href="#">平台介绍</a></li>
-        <li><a href="#">平台介绍</a></li>
-        <li><a href="#">平台介绍</a></li>
-        <li><a href="#">平台介绍</a></li>
+        <% for(let i=1;i<Content.navUrl.length;i++){ %>
+        <li>
+          <a href="<%= Content.navUrl[i].url %>">
+            <%= Content.navUrl[i].about %>
+          </a>
+        </li>
+        <% } %>
       </ul>
     </div>
   </div>

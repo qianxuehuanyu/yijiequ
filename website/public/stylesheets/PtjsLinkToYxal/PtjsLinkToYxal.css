@@ -1,4 +1,4 @@
-*{
+{
 	margin: 0;
 	padding: 0;
 }
@@ -24,9 +24,25 @@ body a{
 	margin: 56px auto 60px;
 	overflow: hidden;
 }
-.case_img{
-	overflow: hidden;
+.siteList{
+	margin-bottom: 45px;
 }
+.siteList a{
+	display: inline-block;
+	width: 90px;
+	height: 42px;
+	margin-right: 28px;
+	border: 1px solid #d38e40;
+	text-align: center;
+	font-size: 18px;
+	line-height: 42px;
+	color: #232323;
+}
+.siteList .now{
+	background-color: #d38e40;
+	color: #fff;
+}
+
 .case_img_style{
 	float: left;
 	overflow: hidden;
@@ -60,6 +76,21 @@ body a{
 	font-size: 16px;
 	margin: 12px 0;
 }
+
+.more_case{
+	display: block;
+    width: 240px;
+    height: 40px;
+    background: #ebeaea;
+    border-radius: 20px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    color: #626262;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
 .case_video{
 	overflow: hidden;
 	width: 680px;

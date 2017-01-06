@@ -17,6 +17,7 @@
         height: 80px;
         border-bottom: 1px solid #f8f8f8;
         background-color: #fff;
+        z-index: 999999999;
     }
 .nav{
     width:1136px;
@@ -25,15 +26,18 @@
 .log{
     float:left;
     margin-top:10px;
-
+margin-right: 120px;
 }
 ul{
-    line-height: 80px;
+    line-height: 80px
 
 }
 li{
-    float: right;
+    float: left;
     padding:0 20px;
+    a {
+        color: #000;
+    }
 }
 }
 }
