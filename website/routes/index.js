@@ -61,7 +61,7 @@ router.get('/index.html', function(req, res, next) {
     var sqlselect=setInterval(function(){
       if(connquery_count==6){
         clearInterval(sqlselect);
-        res.render("./index",{indexContent:indexcontent});
+        res.render("./index",{Content:indexcontent});
       }
     },100);
 });

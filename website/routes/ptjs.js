@@ -38,7 +38,7 @@ router.get('/ptjs.html', function(req, res, next) {
   var sqlselect=setInterval(function(){
       if(connquery_count==3){
         clearInterval(sqlselect);
-        res.render("./ptjs/ptjs", {ptjsContent: ptjscontent});
+        res.render("./ptjs/ptjs", {Content: ptjscontent});
       }
     },100);
 });
