@@ -6,10 +6,10 @@ const conn = require("./MySqlConnection");
 //ptjsLinkToyxal
 router.post('/PtjsLinkToYxal', function(req, res, next) {
 	console.log(req.body.displayCity);
-  	res.render("./ptjs/PtjsLinkToYxal.html", {displayCity: req.displayCity});       
+  	res.render("/PtjsLinkToYxal.html", {displayCity: req.displayCity});       
 });
 
-router.get('/ptjs/PtjsLinkToYxal.html', function(req, res, next) {
+router.get('/PtjsLinkToYxal.html', function(req, res, next) {
 
 	var linkTocontent={
 		title:"亿街区官方网站",
@@ -53,7 +53,7 @@ router.get('/ptjs/PtjsLinkToYxal.html', function(req, res, next) {
   var sqlselect=setInterval(function(){
       if(connquery_count==4){
         clearInterval(sqlselect);
-        res.render("./ptjs/PtjsLinkToYxal.html", {Content: linkTocontent});
+        res.render("./PtjsLinkToYxal/PtjsLinkToYxal", {Content: linkTocontent});
       }
     },100);
 });
