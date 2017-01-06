@@ -8,13 +8,14 @@ var bodyParser = require('body-parser');
 var apis = require('./routes/apis');
 var fgsq = require('./routes/fgsq');
 // var gywm = require('./routes/gywm');
-// var index_hzhb = require('./routes/index_hzhb');
+// var index_hzhb.ejs = require('./routes/index_hzhb.ejs');
 var index = require('./routes/index');
 // var jmhz = require('./routes/jmhz');
 var ptjs = require('./routes/ptjs');
 var users = require('./routes/users');
 var yjqxw = require('./routes/yjqxw');
 var yxal = require('./routes/yxal');
+var PtjsLinkToYxal = require('./routes/LinkTo');
 
 var app = express();
 
@@ -33,12 +34,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/users', apis);
 app.use('/', fgsq);
 // app.use('/', gywm);
-// app.use('/', index_hzhb);
+// app.use('/', index_hzhb.ejs);
 app.use('/', index);
 // app.use('/', jmhz);
 app.use('/', ptjs);
 app.use('/', yjqxw);
 app.use('/', yxal);
+app.use('/', PtjsLinkToYxal);
 
 app.use('/users', users);
 
