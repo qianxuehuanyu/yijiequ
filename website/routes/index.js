@@ -6,7 +6,7 @@ const conn = require("./MySqlConnection");
 //index
 router.get('/index.html', function(req, res, next) {
 	var indexContent={
-		tilte:"亿街区官方网站",
+		title:"亿街区官方网站",
 		navUrl:{},
 		asideUrl:{},
 		footerUrl:{},
