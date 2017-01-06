@@ -10,6 +10,7 @@ router.get('/ptjs.html', function(req, res, next) {
 	var ptjscontent={
 		title:"亿街区官方网站",
 		navUrl:{},
+    navTitle:"ptjs",
 		footerUrl:{},
   	selectCount:0,
 		cityList:{},
