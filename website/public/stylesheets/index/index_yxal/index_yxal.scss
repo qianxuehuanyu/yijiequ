@@ -4,6 +4,7 @@ body{
 #yxal{
   width: 1243px;
   background: #fff;
+  margin: auto;
   .yxalConter{
     width: 1136px;
     height: 100%;
@@ -28,9 +29,53 @@ body{
         height: 250px;
         margin: 0 8px 10px;
         float: left;
-        background-size: cover;
         position: relative;
+
+        .blockhover{
+          position: absolute;
+          width: 358px;
+          height: 250px;
+          background: #000;
+          opacity: 0.3;
+        }
+
+        .yxal_text{
+          position: absolute;
+          width: 272px;
+          height: 101px;
+          top: 45px;
+          left: 43px;
+          overflow: hidden;
+          padding-top:30px;
+          p{
+            height: 70px;
+            width: 272px;
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: 900;
+            color: #fff;
+          }
+          .none{
+            display: none;
+          }
+          span{
+            padding-top: 5px;
+            text-align: center;
+            width: 272px;
+            display: inline-block;
+            font-size: 14px;
+            color: #fff;
+            border-top:1px solid #fff;
+          }
+        }
       }
+      a:hover .yxal_text{
+        padding-top:0;
+      }
+      a:hover .none{
+        display: block;
+      }
+
     }
   }
 }
