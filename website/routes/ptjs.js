@@ -10,7 +10,7 @@ router.get('/ptjs.html', function(req, res, next) {
 		title:"亿街区官方网站",
 		select:0,
 		navUrl: {},
-		citylist:{},
+		cityList:{},
 		ptjsUrl:{}
 	};
 	var connquery_count=0;
@@ -30,7 +30,7 @@ router.get('/ptjs.html', function(req, res, next) {
   });
   conn.query("SELECT * FROM `upload_yxal` GROUP BY `city`;", function (err, result) {
     if (!err) {
-    	ptjscontent.citylist=result;
+    	ptjscontent.cityList=result;
     	ptjscontent.select++;
     } else {console.log(err);}
     connquery_count++;
