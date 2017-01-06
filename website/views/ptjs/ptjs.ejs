@@ -2,7 +2,6 @@
 
     <!--各页面自己的css和js-->
     <link rel="stylesheet" type="text/css" href="/stylesheets/ptjs/ptjs.css">
-    <script type="text/javascript" src="/lib/jquery-3.1.1.min.js"></script>
 
 <% include ../nav.ejs %>
 
@@ -35,12 +34,11 @@
 			<div class="style_word2">
                 亿街区致力于为物业公司打造智慧物业和提升社区服务品质，提供全方位的智慧物业服务系统、运营服务、数据服务、管理培训和顾问咨询服务等一站式智慧物业解决方案，帮助物业公司改善经营状况，实现提高人工效能、增加经营收益、提高服务品质，快速、高效的实现物业服务管理智慧化，助力智慧物业转型。
 			</div>
-			<a href="#" class="more_case">查看全部案例</a>
+			<a href="<%= Content.ptjsUrl[0].url %>" class="more_case">查看全部案例</a>
 			<div class="case_site">
-				<a href="#">赤峰</a>
-				<a href="#">赤峰</a>
-				<a href="#">赤峰</a>
-				<a href="#">赤峰</a>
+				<% for(var i=0;i<Content.cityList.length;i++){%>
+					<a href="<%= Content.ptjsUrl[1].url %>"><%= Content.cityList[i].city %></a>
+				<%} %>
 			</div>
 		</div>
 		<!-- 功能介绍 -->
@@ -96,4 +94,5 @@
 
 
 <script type="text/javascript" src="/javascripts/ptjs/ptjs.js"></script>
+<% include ../rightBar.ejs %>
 <% include ../footer.ejs %>
