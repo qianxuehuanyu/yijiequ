@@ -6,16 +6,22 @@
 }
 
 #header{
-    position: fixed;
-    top:0;
-    left: 0;
     width: 100%;
     height: 80px;
-    background-color: #fff;
-    border-bottom: 1px solid #f8f8f8;
+    background:#fff;
+    .margin_top{
+        position: fixed;
+        right:0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        border-bottom: 1px solid #f8f8f8;
+        background-color: #fff;
+    }
 .nav{
     width:1136px;
     margin: 0 auto;
+
 .log{
     float:left;
     margin-top:10px;

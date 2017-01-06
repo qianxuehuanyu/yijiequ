@@ -1,0 +1,59 @@
+#footer_background {
+  width: 100%;
+  height: 287px;
+  background: #f8f8f8;
+  float: left; }
+  #footer_background .footer {
+    width: 1136px;
+    margin: 20px auto 0;
+    position: relative; }
+    #footer_background .footer .foot_left {
+      float: left; }
+      #footer_background .footer .foot_left span {
+        float: left;
+        width: 76px;
+        height: 17px;
+        position: absolute;
+        left: 100px;
+        top: 0px;
+        background: #26d7bd;
+        text-align: center;
+        line-height: 16px;
+        font-weight: bold; }
+        #footer_background .footer .foot_left span a {
+          color: #FFFFFF;
+          font-size: 15px; }
+    #footer_background .footer p {
+      margin: 10px 0;
+      font-size: 15px;
+      color: #a3a3a3; }
+  #footer_background .color_green {
+    color: #26d7bd; }
+  #footer_background .foot_right {
+    float: right;
+    margin-top: 110px; }
+    #footer_background .foot_right ul {
+      margin-top: 10px; }
+    #footer_background .foot_right li {
+      float: left;
+      padding: 10px; }
+      #footer_background .foot_right li .erweima {
+        width: 122px;
+        height: 122px; }
+      #footer_background .foot_right li .erweima_app {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: -20px; }
+      #footer_background .foot_right li .erweima_weix {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 60px; }
+      #footer_background .foot_right li .erweima_weib {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 130px; }
+
+/*# sourceMappingURL=footer.css.map */
