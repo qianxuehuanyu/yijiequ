@@ -3,7 +3,7 @@ var router = express.Router();
 
 const conn = require("./MySqlConnection");
 /* GET home page. */
-//fgsq
+//ptjsLinkToyxal
 router.post('/PtjsLinkToYxal', function(req, res, next) {
 	console.log(req.body.displayCity);
   	res.render("./ptjs/PtjsLinkToYxal.html", {displayCity: req.displayCity});       
