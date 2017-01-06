@@ -5,9 +5,9 @@
     var weiB=$(".footer_sian");
     var weiX=$(".footer_weixing");
     var app=$(".footer_app");
-    var weiBoErWeiMa=$(".erweima_weib")
-    var weiXinErWeiMa=$(".erweima_weix")
-    var appErWeiMa=$(".erweima_app")
+    var weiBoErWeiMa=$(".erweima_weib");
+    var weiXinErWeiMa=$(".erweima_weix");
+    var appErWeiMa=$(".erweima_app");
 
     function disPlay_noneAndBlock(btn,img,src1,src2) {
         btn.hover(function () {
