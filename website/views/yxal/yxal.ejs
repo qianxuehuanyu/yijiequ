@@ -10,49 +10,22 @@
 	<div class="case_box">
 	<!-- 案例超链接与图片 -->
 		<div class="case_img">
-			<div class="case_img_style">
-				<a href="#" class="a_img">
-					<img src="../../public/images/yxal/1480997604003.jpg" alt="">
-					<span>北京</span>
-				</a>
-				<a href="#" class="a_word">摇摇开门-北京远洋天地</a>
-			</div>
-			<div class="case_img_style">
-				<a href="#" class="a_img">
-					<img src="../../public/images/yxal/1480997817147.jpg" alt="">
-					<span>大连</span>
-				</a>
-				<a href="#" class="a_word">物业缴费-大连东城天下</a>
-			</div>
-			<div class="case_img_style" style="margin-right: 0;">
-				<a href="#" class="a_img">
-					<img src="../../public/images/yxal/1480998081040.jpg" alt="">
-					<span>北京</span>
-				</a>
-				<a href="#" class="a_word">报事报修-北京山水家园北区</a>
-			</div>
-			<div class="case_img_style">
-				<a href="#" class="a_img">
-					<img src="../../public/images/yxal/1480998222261.jpg" alt="">
-					<span>大连</span>
-				</a>
-				<a href="#" class="a_word">物业通知-大连远洋假日</a>
-			</div>
-			<div class="case_img_style">
-				<a href="#" class="a_img">
-					<img src="../../public/images/yxal/1480998361574.jpg" alt="">
-					<span>北京</span>
-				</a>
-				<a href="#" class="a_word">创新案例-远洋东方</a>
-			</div>
-			<div class="case_img_style" style="margin-right: 0;">
-				<a href="#" class="a_img">
-					<img src="../../public/images/yxal/1480997604003.jpg" alt="">
-					<span>天津</span>
-				</a>
-				<a href="#" class="a_word">报事报修-天津远洋城</a>
-			</div>
-		</div>
+
+			<% for (var i=0;i<Content.uploadYxal.length;i++){ %>
+			<!-- <% console.log(Content.uploadYxal); %> -->
+				<% if (Content.uploadYxal[i].display){ %>
+					<div class="case_img_style">
+						<a href="#" class="a_img">
+							<img src="<%= Content.uploadYxal[i].image_href %>" alt="">
+							<span><%= Content.uploadYxal[i].city %></span>
+						</a>
+						<a href="#" class="a_word"><%= Content.uploadYxal[i].title %></a>
+					</div>
+				<% } %>
+			<% } %>
+
+
+
 		<!-- 视频 -->
 		<div class="case_video">
 			<video controls="controls" src=""></video>
