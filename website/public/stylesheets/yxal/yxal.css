@@ -32,6 +32,9 @@ body a{
 	overflow: hidden;
 	margin: 0 43px 53px 0;
 }
+.case_img_style:nth-child(3n){
+	margin-right: 0;
+}
 .case_img_style .a_img{
 	display: block;
 	width: 310px;
