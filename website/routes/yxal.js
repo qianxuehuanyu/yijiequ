@@ -49,13 +49,13 @@ router.get('/yxal.html', function(req, res, next) {
 //yxal10.html
 router.get('/yxal10.html', function(req, res, next) {
   console.log(req.body.id);
-  var yxalcontent={
+  var yxal={
     title:"亿街区官方网站",
     navUrl:{},
     navTitle:"yxal",
     footerUrl:{},
     selectCount:0,
-    uploadYxal:{}
+    uploadYxalArticle:{}
   };
   var connquery_count=0;
     conn.query("SELECT * FROM nav_url", function (err, result) {
@@ -73,9 +73,9 @@ router.get('/yxal10.html', function(req, res, next) {
       connquery_count++;
     });
 
-    conn.query("SELECT * FROM upload_yxal", function (err, result) {
+    conn.query("SELECT * FROM `upload_yxal` WHERE `url_id` ="+req.body.id, function (err, result) {
     if (!err) {
-      yxalcontent.uploadYxal=result;
+      yxalcontent.uploadYxalArticle=result;
       yxalcontent.selectCount++;
     } else {console.log(err);}
     connquery_count++;

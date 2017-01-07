@@ -6,7 +6,7 @@ const conn = require("./MySqlConnection");
 //ptjsLinkToyxal
 router.post('/PtjsLinkToYxal', function(req, res, next) {
 	console.log(req.body.displayCity);
-  	res.render("/PtjsLinkToYxal.html", {displayCity: req.displayCity});       
+  	res.render("/ptjsLinkToyxal/PtjsLinkToYxal", {displayCity: req.body.displayCity});       
 });
 
 router.get('/PtjsLinkToYxal.html', function(req, res, next) {
