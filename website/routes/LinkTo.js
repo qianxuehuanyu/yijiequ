@@ -6,7 +6,7 @@ const conn = require("./MySqlConnection");
 //ptjsLinkToyxal
 router.post('/PtjsLinkToYxal', function(req, res, next) {
 	  console.log(req.body.displayCity);
-  	res.render("/ptjsLinkToyxal/PtjsLinkToYxal", {displayCity: {city:req.body.displayCity}});       
+  	res.render("/PtjsLinkToyxal/PtjsLinkToYxal", {displayCity: req.body.displayCity});       
 });
 
 router.get('/PtjsLinkToYxal.html', function(req, res, next) {
@@ -16,7 +16,7 @@ router.get('/PtjsLinkToYxal.html', function(req, res, next) {
 		navUrl:{},
 		navTitle:"yxal",
 		footerUrl:{},
-  		selectCount:0,
+  	selectCount:0,
 		cityList:{},
 		uploadYxal:{}
 	};
