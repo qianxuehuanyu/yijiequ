@@ -15,7 +15,7 @@ var ptjs = require('./routes/ptjs');
 var users = require('./routes/users');
 var yjqxw = require('./routes/yjqxw');
 var yxal = require('./routes/yxal');
-var PtjsLinkToYxal = require('./routes/LinkTo');
+var PtjsLinkToYxal = require('./routes/ptjsLinkToyxal');
 
 var app = express();
 
