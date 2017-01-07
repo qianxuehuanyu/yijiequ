@@ -4,60 +4,17 @@
             <h1>优秀案例</h1>
         </div>
         <div class="yxal_block">
-            <a href="#" style="background:url('images/index/index_yxal/1480997604003.jpg');background-size:cover;">
-                <div class="blockhover"></div>
-                <div class="yxal_text">
-                    <p>摇摇开门-北京远洋天地</p>
-                    <div class="none">
-                        <span>查看详情</span>
+            <% for(var i=0;i<6;i++){ %>
+                <a href="<%= Content.indexUrl[1].url %>?id=<%= Content.uploadYxal[i].url_id %>" style="background:url('<%=  Content.uploadYxal[i].image_href %>');background-size:cover;">
+                    <div class="blockhover"></div>
+                    <div class="yxal_text">
+                        <p><%=  Content.uploadYxal[i].title %></p>
+                        <div class="none">
+                            <span>查看详情</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#" style="background:url('images/index/index_yxal/1480997817147.jpg');background-size:cover;">
-                <div class="blockhover"></div>
-                <div class="yxal_text">
-                    <p>物业缴费－大连东城天下</p>
-                    <div class="none">
-                        <span>查看详情</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" style="background:url('images/index/index_yxal/1480998081040.jpg');background-size:cover;">
-                <div class="blockhover"></div>
-                <div class="yxal_text">
-                    <p>报事报修－北京远洋山水家园北区</p>
-                    <div class="none">
-                        <span>查看详情</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" style="background:url('images/index/index_yxal/1480998222261.jpg');background-size:cover;">
-                <div class="blockhover"></div>
-                <div class="yxal_text">
-                    <p>物业通知－大连远洋假日</p>
-                    <div class="none">
-                        <span>查看详情</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" style="background:url('images/index/index_yxal/1480998361574.jpg');background-size:cover;">
-                <div class="blockhover"></div>
-                <div class="yxal_text">
-                    <p>创新案例－远洋东方</p>
-                    <div class="none">
-                        <span>查看详情</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" style="background:url('images/index/index_yxal/1481184917018.jpg');background-size:cover;">
-                <div class="blockhover"></div>
-                <div class="yxal_text">
-                    <p>报事报修－天津远洋城</p>
-                    <div class="none">
-                        <span>查看详情</span>
-                    </div>
-                </div>
-            </a>
+                </a>
+            <% } %>
         </div>
     </div>
 </div>
