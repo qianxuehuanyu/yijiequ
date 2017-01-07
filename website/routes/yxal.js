@@ -44,7 +44,49 @@ router.get('/yxal.html', function(req, res, next) {
       }
     },100);
 });
+///////////////////////////////////
+///////////////////////////////////
+//yxal10.html
+router.get('/yxal10.html', function(req, res, next) {
+  console.log(req.body.id);
+  var yxalArticle={
+    title:"亿街区官方网站",
+    navUrl:{},
+    navTitle:"yxal",
+    footerUrl:{},
+    selectCount:0,
+    uploadYxalArticle:{}
+  };
+  var connquery_count=0;
+    conn.query("SELECT * FROM nav_url", function (err, result) {
+      if (!err) {
+        yxalArticle.navUrl=result;
+        yxalArticle.selectCount++;
+      }else{console.log(err)}
+      connquery_count++;
+    });
+    conn.query("SELECT * FROM footer_url", function (err, result) {
+      if (!err) {
+        yxalArticle.footerUrl=result;
+        yxalArticle.selectCount++;
+      }else{console.log(err)}
+      connquery_count++;
+    });
 
+    conn.query("SELECT * FROM `upload_yxal` WHERE `url_id` ="+req.body.id, function (err, result) {
+    if (!err) {
+      yxalArticle.uploadYxalArticle=result;
+      yxalArticle.selectCount++;
+    } else {console.log(err);}
+    connquery_count++;
+  });
+  var sqlselect=setInterval(function(){
+      if(connquery_count==3){
+        clearInterval(sqlselect);
+        res.render("./yxal/yxal10", {Content: yxalArticle});
+      }
+    },100);
+});
 
 
 module.exports = router;
