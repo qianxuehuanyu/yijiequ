@@ -1,5 +1,5 @@
 <% include ../header.ejs %>
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="/stylesheets/ejqxw/ejqxw.css">
 <link rel="stylesheet" href="/stylesheets/rightBar/rightBar.css">
 <script src="/lib/jquery-3.1.1.min.js"></script>
@@ -10,30 +10,36 @@
 <div id="yjqxw">
     <div class="yjqxw-banner"></div>
     <ul class="news-category clearfix">
-        <!-- TODO js获取news-category-item 类的宽度-->
         <li class="news-category-item news-scaning is-active">
             <a href="#">全部</a>
         </li>
-    </ul>
-    <div>
-    	<a href="/ptjs.html"><h1>调到平台介绍</h1></a>
-    </div>
-    <ul class="news-articles clearfix">
-        <li class="news-item ">
-            <a href="/yjqxw/yjqxw_article.html"><img src="#" alt="新闻图片"></a>
-            <div class="news-abstract">
-                <em>2017-01-01</em>
-                <h2><a href="/yjqxw/yjqxw_article.html">亿街区发力报事报修功能 务满意度</a></h2>
-                <div class="hr-line"></div>
-                <span><a href="/yjqxw/yjqxw_article.html">详情信息&nbsp;&nbsp;&gt;</a></span>
-            </div>
+        <li class="news-category-item news-scaning">
+            <a href="#">公司动态</a>
+        </li>
+        <li class="news-category-item news-scaning">
+            <a href="#">媒体报道</a>
+        </li>
+        <li class="news-category-item news-scaning">
+            <a href="#">市场活动</a>
         </li>
     </ul>
-
-
-
-
+    <ul class="news-articles clearfix">
+        <% for (var i in Content.uploadYjqxw) { %>
+            <% var item = Content.uploadYjqxw[i] %>
+            <li class="news-item clearfix">
+                <a href="/yjqxw2.html?id=<%= item.url_id %>"><img src="<%= item.imageURL %>" alt="新闻图片"></a>
+                <div class="news-abstract">
+                    <em><%= item.time %></em>
+                    <h2><a href="/yjqxw2.html?id=<%= item.url_id %>"><%= item.title %></a></h2>
+                    <div class="hr-line"></div>
+                    <span><a href="/yjqxw2.html?id=<%= item.url_id %>">详情信息&nbsp;&nbsp;&gt;</a></span>
+                </div>
+            </li>
+        <% }; %>
+    </ul>
 </div>
+
+<script src="/javascripts/yjqxw/yjqxw.js"></script>
 
 
 <% include ../footer.ejs %>
