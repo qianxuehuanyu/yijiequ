@@ -3,7 +3,7 @@ var router = express.Router();
 
 const conn = require("./MySqlConnection");
 /* GET home page. */
-//yxal
+//hzhb
 router.get('/hzhb.html', function(req, res, next) {
 
 	var hzhbcontent={
