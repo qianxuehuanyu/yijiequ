@@ -12,8 +12,8 @@ router.get('/yjqxw.html', function(req, res, next) {
 		navUrl:{},
 		navTitle:"yjqxw",
 		footerUrl:{},
-  		selectCount:0,
-  		kindeList:{},
+		selectCount:0,
+		kindeList:{},
 		uploadYjqxw:{}
 	};
 	var connquery_count=0;
@@ -65,7 +65,7 @@ router.get('/yjqxw2.html', function(req, res, next) {
 		navUrl:{},
 		navTitle:"yjqxw",
 		footerUrl:{},
-  		selectCount:0,
+  	selectCount:0,
 		uploadYjqxw:{}
 	};
 	var connquery_count=0;
@@ -83,7 +83,7 @@ router.get('/yjqxw2.html', function(req, res, next) {
       }else{console.log(err)}
       connquery_count++;
     });
-  	conn.query("SELECT * FROM `upload_yjqxw` WHERE `url_id`="+req.body.id, function (err, result) {
+  	conn.query("SELECT * FROM `upload_yjqxw` WHERE `url_id`="+req.query.id, function (err, result) {
     if (!err) {
     	yjqxwcontent.uploadYjqxw=result;
     	yjqxwcontent.selectCount++;

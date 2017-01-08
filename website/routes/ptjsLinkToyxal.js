@@ -7,7 +7,7 @@ const conn = require("./MySqlConnection");
 
 var choose;
 router.post("/ptjsLinkToyxal", function(req, res, next) {
-  console.log(req.body.displayCity,choose);
+  // console.log(req.body.displayCity,choose);
   choose=req.body.displayCity;
   var linkTocontent={
     title:"亿街区官方网站",
@@ -59,7 +59,7 @@ router.post("/ptjsLinkToyxal", function(req, res, next) {
 
 
 router.get('/PtjsLinkToYxal.html', function(req, res, next) {
-  console.log(choose);
+  // console.log(choose);
 	var linkTocontent={
 		title:"亿街区官方网站",
 		navUrl:{},
