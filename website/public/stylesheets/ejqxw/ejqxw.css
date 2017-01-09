@@ -138,3 +138,32 @@
     background: url("/images/yjqxw/newsbg.png") 50% 50% no-repeat;
     background-size: cover;
 }
+
+#yjqxw2 .yjqxw-article {
+    width: 1000px;
+    margin: 60px auto 130px;
+}
+
+#yjqxw2 .yjqxw-article h2 {
+    text-align: center;
+    height: 48px;
+    font: bold 26px/48px "微软雅黑";
+}
+#yjqxw2 .yjqxw-article .article-info {
+    font: 12px/26px "微软雅黑";
+    text-align: center;
+}
+#yjqxw2 .yjqxw-article .hr-line {
+    height: 0;
+    width: 100%;
+    border-top: 1px solid #949494;
+    margin: 15px 0 50px;
+}
+
+
+@media only screen and (max-width: 62.5em) {
+    #yjqxw2 .yjqxw-article {
+        width: 95%;
+    }
+
+}

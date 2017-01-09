@@ -27,6 +27,7 @@
         <% for (var i in Content.uploadYjqxw) { %>
             <% var item = Content.uploadYjqxw[i] %>
             <li class="news-item clearfix">
+                <input type="hidden" class="news-classification" value="全部 <%= item.kind%>">
                 <a href="/yjqxw2.html?id=<%= item.url_id %>"><img src="<%= item.imageURL %>" alt="新闻图片"></a>
                 <div class="news-abstract">
                     <em><%= item.time %></em>
