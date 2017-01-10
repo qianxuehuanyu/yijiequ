@@ -3,6 +3,21 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+#jmhz * {
+	font-family: "微软雅黑";
+	color: #666;
 }
 
 #jmhz .jmhz-banner {
@@ -45,6 +60,12 @@
 	margin: 0 auto;
 }
 
+#jmhz .jmhz-content .show-property .show-property-intro {
+	text-align: center;
+	line-height: 1.6;
+	font-size: 18px;
+}
+
 #jmhz .jmhz-changable-content .jmhz-property-advantage {
 	width:80%;
 	margin: 0 auto;
@@ -56,5 +77,105 @@
 	font: 28px/40px "微软雅黑";
 	color: #f19ba4;
 	margin: 48px 0 24px;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage>p {
+	margin-bottom: 40px;
+}
+
+#jmhz .jmhz-changable-content .advantage-item {
+	float: left;
+	width: calc(50% - 40px);
+	height: 84px;
+	margin: 0 80px 40px 0;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item span {
+	display: inline-block;
+	width: 84px;
+	height: 84px;
+	border-radius: 50%;
+	float:left;
+	margin-right: 12px;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(1) span {
+	background: #cacdd4 url("/images/jmhz/jmhz-09.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(1):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-09.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(1):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(1):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2) span {
+	background: #cacdd4 url("/images/jmhz/jmhz-08.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-08.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(3) span {
+	background: #cacdd4 url("/images/jmhz/jmhz-05.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(3):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-05.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(3):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(3):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(4)  span{
+	background: #cacdd4 url("/images/jmhz/jmhz-06.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(4):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-06.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(4):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(4):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(5) span {
+	background: #cacdd4 url("/images/jmhz/jmhz-07.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(5):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-07.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(5):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(5):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item h4 {
+	margin-bottom: 20px;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item p {
 
 }
+
+
+
+
