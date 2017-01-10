@@ -140,6 +140,18 @@ router.post('/jmhzJoinCheck',function(req,res,next){
   }
 });
 
+router.post('/jmhzJoin',function(req,res,next){
+  console.log(req.query.projectCount);
+    conn.query("INSERT `jmhz_company` (`id`,`company`,`city`,`address`,`contact`,`phone`,`email`,`weixin_public`) "+
+    "VALUE ('','"+req.body.company+"','"+req.boyd.city+"','"+req.boy.address+"','"+req.body.contact+"','"+req.body.phone+
+    "','"+req.body.email+"','"req.body.weixin_public"')",function (err,result) {
+    if(!err){
+      res.json({status:0,retrunback:result});
+    }else{
+      res.json({status:0,retrunback:err});
+    }
+  });
+});
   //   function jmhzJoin() {
   //   conn.query("INSERT `jmhz_company` (`id`,`company`,`city`,`address`,`contact`,`phone`,`email`,`weixin_public`) "+
   //   "VALUE ('','"+req.body.company+"','"+req.boyd.city+"','"+req.boy.address+"','"+req.body.contact+"','"+req.body.phone+
