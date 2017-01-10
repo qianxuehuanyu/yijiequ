@@ -91,16 +91,57 @@ router.get('/jmhz2.html', function(req, res, next) {
 ////////////////////////////////////////////
 //post
 router.post('/jmhzJoinCheck',function(req,res,next){
-  var returnback={};
+  var returnback={
+    status:0,
+    back:{}
+  };
   conn.query("SELECT `jmhz_company` WHERE `company`="+req.body.company, function (req,res ,next) {
     if(!err){
       //返回该公司已经注册
-      res.json({status:1,retrunback:result});
+      returnback.back=result;
+      returnback.status=1;
+      sendreturn();
     }else{
-      jmhzJoin();
+      sendreturn();
     }
   });
-  function jmhzJoin() {
+  conn.query("SELECT `jmhz_company` WHERE `contact`="+req.body.contact,function (req,res,next) {
+    if(!err){
+      //返回该联系人已经被注册使用
+      returnback.back=result;
+      returnback.status=2;
+      sendreturn();
+    }else{
+      sendreturn();
+    }
+  });
+  conn.query("SELECT `jmhz_company` WHERE `phone`="+req.body.phone,function (req,res,next) {
+    if(!err){
+      //返回该电话已经被注册使用
+      returnback.back=result;
+      returnback.status=3;
+      sendreturn();
+    }else{
+      sendreturn();
+    }
+  });
+  conn.query("SELECT `jmhz_company` WHERE `email`="+req.body.email,function (req,res,next) {
+    if(!err){
+      //返回该邮箱已经被注册使用
+      returnback.back=result;
+      returnback.status=4;
+      sendreturn();
+    }else{
+      sendreturn();
+    }
+  });
+  function sendreturn() {
+      res.json(returnback);
+  }
+});
+
+router.post('/jmhzJoin',function(req,res,next){
+  console.log(req.query.projectCount);
     conn.query("INSERT `jmhz_company` (`id`,`company`,`city`,`address`,`contact`,`phone`,`email`,`weixin_public`) "+
     "VALUE ('','"+req.body.company+"','"+req.boyd.city+"','"+req.boy.address+"','"+req.body.contact+"','"+req.body.phone+
     "','"+req.body.email+"','"req.body.weixin_public"')",function (err,result) {
@@ -110,10 +151,18 @@ router.post('/jmhzJoinCheck',function(req,res,next){
       res.json({status:0,retrunback:err});
     }
   });
-  }
-
 });
-
+  //   function jmhzJoin() {
+  //   conn.query("INSERT `jmhz_company` (`id`,`company`,`city`,`address`,`contact`,`phone`,`email`,`weixin_public`) "+
+  //   "VALUE ('','"+req.body.company+"','"+req.boyd.city+"','"+req.boy.address+"','"+req.body.contact+"','"+req.body.phone+
+  //   "','"+req.body.email+"','"req.body.weixin_public"')",function (err,result) {
+  //   if(!err){
+  //     res.json({status:0,retrunback:result});
+  //   }else{
+  //     res.json({status:0,retrunback:err});
+  //   }
+  // });
+  // }
 
 
 module.exports = router;

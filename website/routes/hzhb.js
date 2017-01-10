@@ -72,7 +72,7 @@ router.get('/hzhb2.html', function(req, res, next) {
       }else{console.log(err)}
       connquery_count++;
     });
-    conn.query("SELECT * FROM `upload_hzhb` WHERE `url_id`="req.query.id, function (err, result) {
+    conn.query("SELECT * FROM `upload_hzhb` WHERE `url_id`="+req.query.id, function (err, result) {
       if (!err) {
         hzhbcontent.hzhbCon=result;
         hzhbcontent.selectCount++;
