@@ -27,7 +27,7 @@ body a{
 .siteList{
 	margin-bottom: 45px;
 }
-.siteList a{
+.siteList span{
 	display: inline-block;
 	width: 90px;
 	height: 42px;
@@ -37,16 +37,22 @@ body a{
 	font-size: 18px;
 	line-height: 42px;
 	color: #232323;
+	cursor: pointer;
 }
 .siteList .now{
 	background-color: #d38e40;
 	color: #fff;
 }
-
+.case_img{
+	overflow: hidden;
+}
 .case_img_style{
 	float: left;
 	overflow: hidden;
 	margin: 0 43px 53px 0;
+}
+.case_img_style:nth-child(3n){
+	margin-right: 0;
 }
 .case_img_style .a_img{
 	display: block;

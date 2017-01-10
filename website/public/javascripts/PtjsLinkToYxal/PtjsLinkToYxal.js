@@ -1,5 +1,5 @@
 (function(){
-	var list = $(".siteList a");
+	var list = $(".siteList span");
 	console.log(list);
 
 	list.click(function(event) {
