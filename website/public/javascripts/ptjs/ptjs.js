@@ -18,7 +18,7 @@
 	list2.click(function(event) {
 		/* Act on the event */
 		content=$(this).html();
-		$.post("/PtjsLinkToYxal",{displayCity:content});
+		$.post("./PtjsLinkToYxal",{displayCity:content});
 	});
 
 
