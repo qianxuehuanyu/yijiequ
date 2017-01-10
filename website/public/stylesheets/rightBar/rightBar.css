@@ -111,7 +111,7 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 62.5em) {
     #side-bar {
         width:60px;
     }
