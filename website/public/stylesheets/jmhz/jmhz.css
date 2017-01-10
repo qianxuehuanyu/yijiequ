@@ -11,3 +11,50 @@
     background: url("/images/jmhz/jiabg.png") 50% 50% no-repeat;
     background-size: cover;
 }
+
+#jmhz .jmhz-content .jmhz-nav {
+	text-align: center;
+	width: 80%;
+	margin: 30px auto 50px;
+}
+
+#jmhz .jmhz-content .jmhz-nav button {
+	padding: 15px 70px;
+	border:1px solid #f1959e;
+	color: #f1959e;
+	font-size: 18px;
+	margin-right: 70px;
+	outline: none;
+	cursor: pointer;
+	background: white;
+	font-weight: bold;
+}
+
+#jmhz .jmhz-content .jmhz-nav button.btn-active {
+	color: #fff;
+	background: #f1959e;
+	border:1px solid #f1959e;
+}
+
+#jmhz .jmhz-content .jmhz-nav button:nth-last-child(1) {
+	margin-right: 0;
+}
+
+#jmhz .jmhz-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage {
+	width:80%;
+	margin: 0 auto;
+
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage h3 {
+	text-align: center;
+	font: 28px/40px "微软雅黑";
+	color: #f19ba4;
+	margin: 48px 0 24px;
+
+}
