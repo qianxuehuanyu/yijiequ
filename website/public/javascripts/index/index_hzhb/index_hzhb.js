@@ -15,19 +15,25 @@ $(document).ready(function () {
             sy[0].style.display="block";
             hz[0].style.display="none";
             wy[0].style.display="none";
-            console.log(sy)
+            sysj.addClass("index_hzhb_colorAndBorder");
+            hzsj.removeClass("index_hzhb_colorAndBorder");
+            wyqy.removeClass("index_hzhb_colorAndBorder");
         }
     hzsj[0].onclick=function (event) {
         sy[0].style.display="none";
         hz[0].style.display="block";
         wy[0].style.display="none";
-        console.log(22)
+        sysj.removeClass("index_hzhb_colorAndBorder");
+        hzsj.addClass("index_hzhb_colorAndBorder");
+        wyqy.removeClass("index_hzhb_colorAndBorder");
     };
 
     wyqy[0].onclick=function (event) {
         sy[0].style.display="none";
         hz[0].style.display="none";
         wy[0].style.display="block";
-        console.log(33)
+        sysj.removeClass("index_hzhb_colorAndBorder");
+        hzsj.removeClass("index_hzhb_colorAndBorder");
+        wyqy.addClass("index_hzhb_colorAndBorder");
     };
 });
