@@ -37,7 +37,9 @@
 			<a href="<%= Content.ptjsUrl[0].url %>" class="more_case">查看全部案例</a>
 			<div class="case_site">
 				<% for(var i=0;i<Content.cityList.length;i++){%>
-					<a href="<%= Content.ptjsUrl[1].url %>"><%= Content.cityList[i].city %></a>
+					<a href="<%= Content.ptjsUrl[1].url %>">
+					<%= Content.cityList[i].city %>
+					</a>
 				<%} %>
 			</div>
 		</div>
