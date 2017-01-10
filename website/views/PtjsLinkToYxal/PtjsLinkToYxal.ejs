@@ -11,10 +11,38 @@
 	<!-- 案例超链接与图片 -->
 		<div class="siteList">
 
+				<!-- <a href="#"><%= theKind.kind %></a> -->
+				<% for(var i=0;i<Content.cityList.length;i++){%>
 				<a href="#"><%= theKind.kind %></a>
+					<% if (Content.cityList[i].city==theKind.kind){ %>
+						<!-- <span class="now">
+						<%= Content.cityList[i].city %>
+						</span> -->
+						console.log(11111111);
+					<%} else{%>
+						<span>
+						<%= Content.cityList[i].city %>
+						</span>
+					<%} %>
+				<%} %>
 
 		</div>
-		<div class="case_img"></div>
+
+		<div class="case_img">
+			<% for (var i=0;i<Content.uploadYxal.length;i++){ %>
+			<!-- <% console.log(Content.uploadYxal); %> -->
+				<% if (Content.uploadYxal[i].display){ %>
+					<div class="case_img_style">
+						<a href="#" class="a_img">
+							<img src="<%= Content.uploadYxal[i].image_href %>" alt="">
+							<span><%= Content.uploadYxal[i].city %></span>
+						</a>
+						<a href="#" class="a_word"><%= Content.uploadYxal[i].title %></a>
+					</div>
+				<% } %>
+			<% } %>
+		</div>
+
 		<a href="#" class="more_case">查看全部案例</a>
 		<!-- 视频 -->
 		<div class="case_video">
