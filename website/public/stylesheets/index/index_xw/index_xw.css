@@ -1,0 +1,56 @@
+#xw {
+  width: 100%;
+  background: #f6f6f6; }
+  #xw .xw {
+    width: 1136px;
+    margin: 0 auto;
+    height: 400px; }
+    #xw .xw h1 {
+      width: 100%;
+      text-align: center; }
+    #xw .xw h3 {
+      width: 100%;
+      text-align: center;
+      margin: 15px 0;
+      color: #00A686; }
+    #xw .xw h5 {
+      width: 100%;
+      text-align: center;
+      color: #a3a3a3; }
+    #xw .xw .xw_left {
+      float: left;
+      width: 515px;
+      margin-top: 10px; }
+      #xw .xw .xw_left i {
+        width: 100%;
+        height: 148px;
+        float: left;
+        background: url("/images/index/index_xw/dontai.png") no-repeat center; }
+      #xw .xw .xw_left h2 {
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin: 10px 0;
+        color: #000; }
+      #xw .xw .xw_left a:hover h2 {
+        color: #00A686; }
+      #xw .xw .xw_left a:hover i {
+        background: url("/images/index/index_xw/dongtai_h.png") no-repeat center; }
+      #xw .xw .xw_left ul {
+        border-left: 1px solid #000000; }
+    #xw .xw .xw_mid {
+      float: left;
+      width: 515px;
+      text-align: center; }
+      #xw .xw .xw_mid h2 {
+        width: 100%;
+        text-align: center; }
+    #xw .xw .xw_right {
+      float: left;
+      width: 515px;
+      text-align: center; }
+      #xw .xw .xw_right h2 {
+        width: 100%;
+        text-align: center; }
+
+/*# sourceMappingURL=index_xw.css.map */

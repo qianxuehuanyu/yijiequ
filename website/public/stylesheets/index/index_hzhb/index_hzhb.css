@@ -25,6 +25,8 @@
       margin: 0 20px;
       font-size: 20px;
       color: #b8b8b8; }
+    #hzhb .shangjia li:hover {
+      cursor: pointer; }
     #hzhb .shangjia .index_hzhb_colorAndBorder {
       color: #00ab88;
       border-bottom: 3px solid #00ab88; }
