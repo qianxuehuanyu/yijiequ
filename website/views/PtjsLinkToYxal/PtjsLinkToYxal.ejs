@@ -10,16 +10,24 @@
 	<div class="case_box">
 	<!-- 案例超链接与图片 -->
 		<div class="siteList">
-
-				<input type="hidden" value="<%= theKind.kind %>" class="now_span">
-				<% for(var i=0;i<Content.cityList.length;i++){ %>
-
-						<span>
-						<%= Content.cityList[i].city %>
-						</span>
-
-				<%} %>
-
+			<% var mykind = theKind.kind %>
+			<% var key = 0;var arrCity=["全部","上海","北京","大连","天津","沈阳","深圳","赤峰"]; %>
+			<% for(var i=arrCity.length-1;i>=0;i--){
+				if(mykind.indexOf(arrCity[i])!=-1) {key=i;}
+			} %>
+			<% for(var i=0;i<Content.cityList.length;i++){ %>
+				<% var mycity=Content.cityList[i].city; %>
+				<% mycity=mycity+""; %>
+				<% if(mycity==String(arrCity[key])){ %>
+				<span class="now">
+					<%= mycity %>
+				</span>
+				<% }else{ %>
+				<span class="">
+					<%= mycity %>
+				</span>
+				<% } %>
+			<% } %>
 		</div>
 
 		<div class="case_img">
