@@ -14,12 +14,11 @@
     <h1 class="textcenter"><%=thearticle.title %></h1>
     <p class="textcenter">发布时间：<%=thearticle.time%>来源： <%=thearticle.from%>阅读量：<%=thearticle.readed%></p>
     </div>
-    <div id="yxal-article-content"></div>
+    <div id="yxal-article-content">
+        <%- thearticle.article_content%>
+    </div>
     </div>
    
 </div>
-
-<script src="/javascripts/yxal/yxal10.js"></script>
-
 
 <% include ../footer.ejs %>
