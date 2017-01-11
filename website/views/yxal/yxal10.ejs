@@ -1,0 +1,25 @@
+<% include ../header.ejs %>
+
+    <!--各页面自己的css和js-->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/yxal/yxal.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/yxal/yxal10.css">
+<% include ../nav.ejs %>
+
+    <!--页面主体-->
+    <div class="banner"></div> 
+    <% var thearticle=Content.uploadYxalArticle[0] %>
+    <input type="hidden" id="returned-article" value="<%= thearticle.article_content %>">
+    <div class="case_wrap">
+    <div class="cdet_head">
+    <h1 class="textcenter"><%=thearticle.title %></h1>
+    <p class="textcenter">发布时间：<%=thearticle.time%>来源： <%=thearticle.from%>阅读量：<%=thearticle.readed%></p>
+    </div>
+    <div id="yxal-article-content"></div>
+    </div>
+   
+</div>
+
+<script src="/javascripts/yxal/yxal10.js"></script>
+
+
+<% include ../footer.ejs %>
