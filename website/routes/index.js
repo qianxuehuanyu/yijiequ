@@ -11,7 +11,8 @@ router.get('/', function(req, res, next) {
     selectCount:0,
     indexUrl:{},
     uploadHzhb:{},
-    uploadYxal:{}
+    uploadYxal:{},
+    upload_yjqxw:{}
   };
   var connquery_count=0;
     conn.query("SELECT * FROM nav_url", function (err, result) {
@@ -49,8 +50,16 @@ router.get('/', function(req, res, next) {
       }else{console.log(err)}
       connquery_count++;
     });
+    conn.query("SELECT * FROM upload_yjqxw", function (err, result) {
+      if (!err) {
+        indexcontent.uploadYjqxw=result;
+        indexcontent.selectCount++;
+      }else{console.log(err)}
+      connquery_count++;
+    });
+
     var sqlselect=setInterval(function(){
-      if(connquery_count==5){
+      if(connquery_count==6){
         clearInterval(sqlselect);
         res.render("./index",{Content:indexcontent});
       }

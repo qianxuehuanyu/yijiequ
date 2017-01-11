@@ -1,0 +1,16 @@
+.textcenter{
+	text-align: center;
+}
+.case_wrap {
+    width: 1030px;
+    margin: 30px auto 60px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cdet_head {
+    border-bottom: 1px solid #949494;
+    padding-bottom: 14px;
+    text-align: center;
+    margin-bottom: 60px;
+}
