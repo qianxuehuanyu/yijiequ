@@ -8,12 +8,14 @@
                 <i></i>
                 <h2>公司动态</h2>
             </a>
-            <ul>
-                <%# for (let i=0;i<Content.uploadYjqxw.length;i++){
+            <ul class="xw_ul">
+                <%for (let i=0;i<Content.uploadYjqxw.length;i++){
                     if(Content.uploadYjqxw[i].kind=="公司动态"){
                 %>
-                <li><a href="#"><%#= Content.uploadYjqxw[i].title %></a></li>
-                <%# }} %>
+                <li><a href="/yjqxw2.html?id=<%= Content.uploadYjqxw[i].url_id %>"><%= Content.uploadYjqxw[i].title %></a></li>
+                <% }} %>
+                <li><p><a href="/yjqxw2.html">更多</a></p></li>
+
             </ul>
         </div>
         <div class="xw_mid">
@@ -21,12 +23,14 @@
                 <i></i>
                 <h2>媒体报道</h2>
             </a>
-            <ul>
-                <%# for (let i=0;i<Content.uploadYjqxw.length;i++){
+            <ul class="xw_ul">
+                <% for (let i=0;i<Content.uploadYjqxw.length;i++){
                 if(Content.uploadYjqxw[i].kind=="媒体报道"){
                 %>
-                <li><a href="#"><%#= Content.uploadYjqxw[i].title %></a></li>
-                <%# }} %>
+                <li><a href="/yjqxw2.html?id=<%= Content.uploadYjqxw[i].url_id %>"><%= Content.uploadYjqxw[i].title %></a></li>
+                <% }} %>
+                <li><p><a href="/yjqxw2.html">更多</a></p></li>
+
             </ul>
         </div>
         <div class="xw_right">
@@ -35,11 +39,12 @@
                 <h2>市场活动</h2>
             </a>
             <ul>
-                <%# for (let i=0;i<Content.uploadYjqxw.length;i++){
+                <% for (let i=0;i<Content.uploadYjqxw.length;i++){
                 if(Content.uploadYjqxw[i].kind=="市场活动"){
                 %>
-                <li><a href="#"><%#= Content.uploadYjqxw[i].title %></a></li>
-                <%# }} %>
+                <li><a href="/yjqxw2.html?id=<%= Content.uploadYjqxw[i].url_id %>"><%= Content.uploadYjqxw[i].title %></a></li>
+                <% }} %>
+<li><p><a href="/yjqxw2.html">更多</a></p></li>
             </ul>
         </div>
     </div>

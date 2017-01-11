@@ -20,6 +20,7 @@
       text-align: center;
       color: #a3a3a3;
     }
+
     .xw_left{
       float: left;
       width: 378px;
@@ -44,8 +45,32 @@
         background: url("/images/index/index_xw/dongtai_h.png")no-repeat center;
       }
       ul{
+        padding: 10px 50px;
         border-right: 1px solid #000000;
-      }
+        list-style:disc;
+        float: left;
+        height: 144px;
+        li{
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          width: 278px;
+          padding: 5px 0;
+          a{
+            color: #878787;
+            font-size: 14px;
+          }
+          a:hover{
+            color: #ff1111;
+          }
+          p{
+            float: left;
+            width: 100%;
+            text-align: center;
+          }
+          }
+        }
+
     }
     .xw_mid{
       float: left;
@@ -71,7 +96,31 @@
         background: url("/images/index/index_xw/baodao_h.png")no-repeat center;
       }
       ul{
+        padding: 10px 50px;
+        float: left;
         border-right: 1px solid #000000;
+        height: 144px;
+
+        li{
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          float: left;
+          width: 278px;
+          padding: 5px 0;
+          a{
+            color: #878787;
+            font-size: 14px;
+          }
+          a:hover{
+            color: #ff1111;
+          }
+          p{
+            float: left;
+            width: 100%;
+            text-align: center;
+          }
+        }
       }
     }
     .xw_right{
@@ -97,6 +146,32 @@
       a:hover i{
         background: url("/images/index/index_xw/huodong_h.png")no-repeat center;
       }
+      ul{
+        float: left;
+        padding: 10px 50px;
+        height: 144px;
+
+        list-style-type:disc;
+        li{
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          width: 278px;
+          padding: 5px 0;
+          a{
+            color: #878787;
+            font-size: 14px;
+          }
+          a:hover{
+            color: #ff1111;
+          }
+          p{
+            float: left;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+
+      }
     }
   }
-}

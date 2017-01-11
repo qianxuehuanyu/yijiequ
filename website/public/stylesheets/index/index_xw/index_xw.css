@@ -37,7 +37,26 @@
       #xw .xw .xw_left a:hover i {
         background: url("/images/index/index_xw/dongtai_h.png") no-repeat center; }
       #xw .xw .xw_left ul {
-        border-right: 1px solid #000000; }
+        padding: 10px 50px;
+        border-right: 1px solid #000000;
+        list-style: disc;
+        float: left;
+        height: 144px; }
+        #xw .xw .xw_left ul li {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 278px;
+          padding: 5px 0; }
+          #xw .xw .xw_left ul li a {
+            color: #878787;
+            font-size: 14px; }
+          #xw .xw .xw_left ul li a:hover {
+            color: #ff1111; }
+          #xw .xw .xw_left ul li p {
+            float: left;
+            width: 100%;
+            text-align: center; }
     #xw .xw .xw_mid {
       float: left;
       width: 378px;
@@ -58,7 +77,26 @@
       #xw .xw .xw_mid a:hover i {
         background: url("/images/index/index_xw/baodao_h.png") no-repeat center; }
       #xw .xw .xw_mid ul {
-        border-right: 1px solid #000000; }
+        padding: 10px 50px;
+        float: left;
+        border-right: 1px solid #000000;
+        height: 144px; }
+        #xw .xw .xw_mid ul li {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          float: left;
+          width: 278px;
+          padding: 5px 0; }
+          #xw .xw .xw_mid ul li a {
+            color: #878787;
+            font-size: 14px; }
+          #xw .xw .xw_mid ul li a:hover {
+            color: #ff1111; }
+          #xw .xw .xw_mid ul li p {
+            float: left;
+            width: 100%;
+            text-align: center; }
     #xw .xw .xw_right {
       float: left;
       width: 378px;
@@ -78,5 +116,24 @@
         color: #00A686; }
       #xw .xw .xw_right a:hover i {
         background: url("/images/index/index_xw/huodong_h.png") no-repeat center; }
+      #xw .xw .xw_right ul {
+        float: left;
+        padding: 10px 50px;
+        height: 144px;
+        list-style-type: disc; }
+        #xw .xw .xw_right ul li {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 278px;
+          padding: 5px 0; }
+          #xw .xw .xw_right ul li a {
+            color: #878787;
+            font-size: 14px; }
+          #xw .xw .xw_right ul li a:hover {
+            color: #ff1111; }
+          #xw .xw .xw_right ul li p {
+            float: left;
+            width: 100%;
+            text-align: center; }
 
 /*# sourceMappingURL=index_xw.css.map */
