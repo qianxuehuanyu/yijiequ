@@ -5,31 +5,6 @@ $(function () {
 
     var lis=$("#header").find(".margin_top").find(".nav").find("ul").find("li").find("a");
 
-    // switch (location.href.split("/")[3]){
-    //     case "index.html":
-    //         lis[0].addClass(".bottom-border");
-    //         break;
-    //     case "ptjs.html":
-    //         lis[1].addClass("bottom-border");
-    //         break;
-    //     case "fgsq.html":
-    //         lis[2].addClass("bottom-border");
-    //         break;
-    //     case "yxal.html":
-    //         lis[3].addClass("bottom-border");
-    //         break;
-    //     case "hzhb.html":
-    //         lis[4].addClass("bottom-border");
-    //         break;
-    //     case "yjqxw.html":
-    //         lis[5].addClass("bottom-border");
-    //         break;
-    //     case "jmhz.html":
-    //         lis[6].addClass("bottom-border");
-    //         break;
-    // }
-
-
     function bot_border(html,num) {
         if (location.href.indexOf(html)!=-1){
                 for (var i=0;i<lis.length;i++){
@@ -48,6 +23,29 @@ $(function () {
     bot_border("gywm",7);
 
 
+//     var windowWidth=document.body.clientWidth;
+//     var navWidth=$(".nav").width();
+//     if (windowWidth/navWidth<1){
+//         $("#header").css("width",(windowWidth/navWidth)*100+"%");
+//         $(".margin_top").css("width",(windowWidth/navWidth)*100+"%");
+//         $(".nav").css({"width":(windowWidth/navWidth)*navWidth+"px"})
+//     }
+// console.log(windowWidth);
+//     console.log(navWidth)
 
-   console.log()
+    $(".btn").click(function () {
+
+        if ($(this).hasClass("block")){
+            $("#header").find(".margin_top").find(".nav").find("ul").hide();
+            $(this).css("background","url('/images/header/jiantou.jpg')no-repeat center");
+            $(this).css("background-size", "100%");
+            $(this).removeClass("block")
+        }else {
+            $("#header").find(".margin_top").find(".nav").find("ul").show();
+            $(this).addClass("block");
+            $(this).css("background","url('/images/header/jiantou_f.jpg')no-repeat center");
+            $(this).css("background-size", "100%");
+        }
+    })
+
 });

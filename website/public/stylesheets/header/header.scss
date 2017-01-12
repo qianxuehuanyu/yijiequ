@@ -30,9 +30,22 @@
     margin-top:10px;
 margin-right: 120px;
 }
+    .btn{
+     width: 40px;
+        height: 40px;
+border-radius: 50%;
+        background: url("/images/header/jiantou_f.jpg")no-repeat center;
+        background-size: 100%;
+        position: fixed;
+        right: 65px;
+        top: 20px;
+    }
+    .btn:hover{
+        border: 2px solid #00ab88;
+    }
 ul{
-    line-height: 80px
-
+    line-height: 80px;
+    float: right;
 }
 li{
     float: left;
