@@ -12,14 +12,15 @@
     <input type="hidden" id="returned-article" value="<%= Content.uploadYjqxw[0].article_content %>">
 
     <div class="yjqxw-article">
+
 		<h2><%= Content.uploadYjqxw[0].title %></h2>
 		<p class="article-info">发布时间：<span class="publish-time"><%= Content.uploadYjqxw[0].time %></span>&nbsp;&nbsp;来源：<%= Content.uploadYjqxw[0].from %>&nbsp;&nbsp;阅读量：<%= Content.uploadYjqxw[0].readed %></p>
 		<div class="hr-line"></div>
-		<div id="yjqxw-article-content"></div>
+		<div id="yjqxw-article-content">
+			<%- Content.uploadYjqxw[0].article_content %>
+		</div>
     </div>
 <div>
-
-<script src="/javascripts/yjqxw/yjqxw2.js"></script>
 
 
 <% include ../footer.ejs %>
