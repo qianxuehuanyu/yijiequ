@@ -47,5 +47,11 @@ $(function () {
             $(this).css("background-size", "100%");
         }
     })
-
+    
+var clickTime=setInterval(function () {
+    if (document.body.clientWidth<1000){
+        $(".btn")[0].click();
+        clearInterval(clickTime)
+    }
+},10)
 });
