@@ -27,8 +27,7 @@ $(function () {
 
     fade();
 
-    var lb_time = setInterval(function () {
-
+    setInterval(function () {
         fade();
     }, 3000)
 });
