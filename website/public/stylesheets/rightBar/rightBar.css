@@ -1,0 +1,125 @@
+#side-bar {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 110px;
+    z-index: 9999;
+}
+
+#side-bar ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#side-bar .sidebar-item {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 10px;
+    list-style: none;
+}
+
+#side-bar .sidebar-item .sidebar-hide-wraper {
+    position: absolute;
+    display: none;
+}
+#side-bar .sidebar-item .sidebar-hide-wraper {
+    top: 0;
+    left: -6px;
+}
+
+#side-bar .sidebar-item:hover .sidebar-hide-wraper {
+    display: block;
+}
+
+#side-bar .sidebar-tel {
+    background: #e4e2e2 url(/images/rightBar/righ_ico_tel.png) center center no-repeat;
+}
+
+#side-bar .sidebar-app, #side-bar .sidebar-top {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    background: #e4e2e2;
+}
+#side-bar .sidebar-top a {
+    text-decoration: none;
+    color: white;
+}
+
+#side-bar .sidebar-wechat {
+    background: #e4e2e2 url(/images/rightBar/righ_ico_tel.png) center center no-repeat;
+}
+
+#side-bar .sidebar-wechat {
+    background: #e4e2e2 url(/images/rightBar/righ_ico_wei.png) center center no-repeat;
+}
+
+#side-bar .sidebar-weibo {
+    background: #e4e2e2 url(/images/rightBar/righ_ico_sina.png) center center no-repeat;
+}
+
+#side-bar .sidebar-example {
+    background: #e4e2e2 url(/images/rightBar/fbar_caseico.png) center center no-repeat;
+}
+#side-bar .sidebar-example a {
+    display: block;
+    width: 100%;
+    height: 45px;
+}
+
+#side-bar .sidebar-tel .sidebar-hide-wraper .sidebar-hide {
+    position: relative;
+}
+
+#side-bar .sidebar-tel .sidebar-hide-wraper .tel-hide span {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 45px;
+    position: absolute;
+    right: 11px;
+    width: 130px;
+    height: 45px;
+    padding: 0 10px;
+    color: white;
+    background: #e4e2e2;
+}
+#side-bar .sidebar-tel .sidebar-hide-wraper .tel-hide img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+#side-bar .has-qr .sidebar-hide-wraper .sidebar-hide .qr-code {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border: 3px solid #e4e2e2;
+}
+
+#side-bar .has-qr .sidebar-hide-wraper .sidebar-hide .corner {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+
+
+#side-bar .join-us img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 62.5em) {
+    #side-bar {
+        width:60px;
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    #side-bar {
+        display: none;
+    }
+}

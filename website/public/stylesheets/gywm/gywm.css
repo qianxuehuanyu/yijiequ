@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#gywm .gywm-banner {
+    width: 100%;
+    height: 160px;
+    background: url("/images/gywm/guanbg.png") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+#gywm .team,
+#gywm .pin,
+#gywm .contact {
+	text-align: center;
+}
+
+#gywm .gywm-content h2 {
+	display: inline-block;
+	text-align: center;
+	font: 30px/45px "微软雅黑";
+	color: #f1959e;
+	padding: 2px 30px;
+	border: 1px solid #f1959e;
+	margin: 35px auto;
+}
+
+#gywm .gywm-content p{
+	color: #a3a3a3;
+	font: 16px/30px "微软雅黑";
+}
+
+#gywm .contact .ways {
+	color: #a3a3a3;
+	font: 16px/30px "微软雅黑";
+}

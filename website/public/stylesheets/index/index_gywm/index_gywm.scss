@@ -1,0 +1,100 @@
+#index_gywm{
+  width: 100%;
+  background:#e87e30;
+  .gywm{
+    width: 1136px;
+    margin: 0 auto;
+    height: 500px;
+    h1{
+      width: 100%;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    h3{
+      width: 100%;
+      text-align: center;
+      margin: 15px 0;
+      color: #fff;
+    }
+    h5{
+      width: 100%;
+      text-align: center;
+      color: #fff;
+    }
+    .tdjs{
+      float: left;
+      width: 378px;
+      margin-top: 10px;
+      i{
+        width: 100%;
+        height: 148px;
+        float: left;
+        background:url("/images/index/index_gywm/tuandui.png")no-repeat center;
+      }
+      h2{
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin: 10px 0;
+        color: #fff;
+      }
+      a:hover i{
+        background: url("/images/index/index_gywm/tuandui_l.png")no-repeat center;
+      }
+      p{
+       margin:0 50px;
+        color: #FFFFFF;
+      }
+    }
+    .zxns{
+      float: left;
+      width: 378px;
+      margin-top: 10px;
+      i{
+        width: 100%;
+        height: 148px;
+        float: left;
+        background:url("/images/index/index_gywm/zhaoxian.png")no-repeat center;
+      }
+      h2{
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin: 10px 0;
+        color: #fff;
+      }
+      a:hover i{
+        background: url("/images/index/index_gywm/zhaoxian_l.png")no-repeat center;
+      }
+      p{
+        margin:0 50px;
+        color: #FFFFFF;
+      }
+    }
+    .lxwm{
+      float: left;
+      width: 378px;
+      margin-top: 10px;
+      i{
+        width: 100%;
+        height: 148px;
+        float: left;
+        background:url("/images/index/index_gywm/lianxi.png")no-repeat center;
+      }
+      h2{
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin: 10px 0;
+        color: #fff;
+      }
+      a:hover i{
+        background: url("/images/index/index_gywm/lianxi_l.png")no-repeat center;
+      }
+      p{
+        margin:0 50px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

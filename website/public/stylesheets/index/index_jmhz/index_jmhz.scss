@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Microsoft YaHei";
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+#jmhz{
+  width: 1243px;
+  font-size: 18px;
+  background: #fff;
+  margin: auto;
+
+  .jmhzConter {
+    width: 1136px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .jmhz_title{
+      height: 131px;
+      text-align: center;
+
+      h1{
+        margin-top: 23px;
+        color: #f1959e;
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-family: "SimHei";
+      }
+      p:nth-child(2) {
+        margin: 15px 0 0 0;
+        color: #f1959e;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 300;
+      }
+      p:nth-child(3) {
+        margin-top: 10px;
+        color: #a3a3a3;
+        font-weight: 300;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+    .jmhz_block{
+      width: 100%;
+      margin-top: 30px;
+
+      a{
+        width: 507px;
+        height: 336px;
+        float: left;
+        padding-left: 40px;
+        display: block;
+
+      .jmhz_block_title{
+        border-bottom: 1px solid #a3a3a3;
+        padding-bottom: 20px;
+        h2{
+          height: 30px;
+          line-height: 30px;
+          font-size: 25px;
+          font-weight: 900; 
+          color: #f1959e;
+          position: relative;
+          padding-left:5px;
+          width: 470px;
+          border-left:5px solid #f1959e;
+          }
+      }
+        .jmhz_block_text{
+          width: 540px;
+          height: 175px;
+          margin-top: 90px;
+          i{
+            float: left;
+            width: 148px;
+            height: 148px;
+            margin-right: 50px;
+          }
+          p{
+            float: left;
+            width: 261px;
+            height: 175px;
+            color: #818181;
+            font-size: 15px;
+            line-height: 35px;
+          }
+          .wuyeico{
+            //background:url("../public/images/index/index_jmhz/wujiaico.png");
+            background:url("/images/index/index_jmhz/wujiaico.png")
+          }
+          .shangjiaico{
+            background:url("/images/index/index_jmhz/shangjiaico.png");
+          }
+        }
+        .textborder{
+
+          border-right: 1px solid #a3a3a3;
+        }
+      }
+      
+      .jmhz_block2{
+        margin-left: 40px;
+        float:right;
+      }
+      .jmhz_block1:hover .wuyeico{
+        background:url("/images/index/index_jmhz/wujiaico_h.png")
+      }
+      .jmhz_block1:hover h2{
+        color: #ec6c00;
+        border-left:5px solid #ec6c00;
+      }
+      .jmhz_block2:hover .shangjiaico{
+         background:url("/images/index/index_jmhz/shangjiaico_h.png")
+      }
+      .jmhz_block2:hover h2{
+        color: #ec6c00;
+        border-left:5px solid #ec6c00;
+
+      }
+    }
+  }
+}
