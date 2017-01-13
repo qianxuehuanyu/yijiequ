@@ -3,6 +3,25 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+#jmhz * {
+	font-family: "微软雅黑";
+	color: #666;
+}
+
+#jmhz {
+	margin-bottom: 40px;
 }
 
 #jmhz .jmhz-banner {
@@ -11,3 +30,314 @@
     background: url("/images/jmhz/jiabg.png") 50% 50% no-repeat;
     background-size: cover;
 }
+
+#jmhz .jmhz-content .jmhz-nav {
+	text-align: center;
+	width: 80%;
+	margin: 30px auto 0;
+}
+
+#jmhz .jmhz-content .jmhz-nav button {
+	padding: 15px 70px;
+	border:1px solid #f1959e;
+	color: #f1959e;
+	font-size: 18px;
+	margin-right: 70px;
+	margin-bottom: 50px;
+	outline: none;
+	cursor: pointer;
+	background: white;
+	font-weight: bold;
+}
+
+#jmhz .jmhz-content .jmhz-nav button.btn-active {
+	color: #fff;
+	background: #f1959e;
+	border:1px solid #f1959e;
+}
+
+#jmhz .jmhz-content .jmhz-nav button:nth-last-child(1) {
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 50em) {
+	#jmhz .jmhz-content .jmhz-nav {
+		width: 100%;
+	}
+
+	#jmhz .jmhz-content .jmhz-nav button {
+		padding: 15px 30px;
+		padding: 12px;
+		margin-right: 30px;
+	}
+
+	#jmhz .jmhz-content .jmhz-nav button:nth-last-child(1) {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 32em) {
+	/*#jmhz .jmhz-content .jmhz-nav button {
+		padding: 12px;
+		margin-right: ;
+		border-radius: 15px;
+		margin: 10px auto 0 !important;
+	}*/
+	#jmhz {
+		min-width: 320px;
+	}
+}
+
+#jmhz .jmhz-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#jmhz .jmhz-content .show-property .show-property-intro {
+	text-align: center;
+	line-height: 1.6;
+	font-size: 18px;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage {
+	width:80%;
+	margin: 0 auto;
+
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage h3 {
+	text-align: center;
+	font: 28px/40px "微软雅黑";
+	color: #f19ba4;
+	margin: 48px 0 24px;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage > p {
+	margin-bottom: 40px;
+}
+
+#jmhz .jmhz-changable-content .advantage-item {
+	float: left;
+	width: calc(50% - 40px);
+	margin: 0 80px 40px 0;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item span {
+	width: 84px;
+	height: 84px;
+	border-radius: 50%;
+	float:left;
+	margin-right: 12px;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item div {
+	float: left;
+	width: calc(100% - 104px);
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(1) span {
+	background: #cacdd4 url("/images/jmhz/jmhz-09.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(1):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-09.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(1):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(1):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2) span {
+	background: #cacdd4 url("/images/jmhz/jmhz-08.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-08.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(2):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(3) span {
+	background: #cacdd4 url("/images/jmhz/jmhz-05.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(3):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-05.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(3):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(3):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(4)  span{
+	background: #cacdd4 url("/images/jmhz/jmhz-06.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(4):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-06.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(4):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(4):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(5) span {
+	background: #cacdd4 url("/images/jmhz/jmhz-07.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(5):hover span {
+	background: #de8d94 url("/images/jmhz/jmhz-07.png") center center no-repeat;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(5):hover h4,
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-child(5):hover p {
+	color: #de8d94;
+}
+
+#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item h4 {
+	margin-bottom: 5px;
+}
+
+@media only screen and (max-width:62.5em) {
+	#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item {
+		height: 84px;
+	}
+
+	#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item div h4 {
+		line-height: 84px;
+		margin-left: 20px;
+		font-size: 22px;
+	}
+
+	#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item div p {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:50em) {
+	#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item {
+		height: auto;
+		float: none;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item:nth-last-child(1) {
+		margin-bottom: 0;
+	}
+
+	#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item div {
+		margin-left: 0;
+		padding: 10px 0;
+	}
+
+	#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item div h4 {
+		margin-left: 0;
+		line-height: 1.2;
+	}
+
+	#jmhz .jmhz-changable-content .jmhz-property-advantage .advantage-item div p {
+		display: block;
+	}
+}
+
+
+
+
+#jmhz .jmhz-changable-content .join-us-flow,
+#jmhz .jmhz-changable-content .join-us-flow img {
+	text-align: center;
+	width: 100%;
+}
+
+#jmhz .jmhz-changable-content .join-us-flow button {
+	padding: 15px 30px;
+	border-radius: 15px;
+	background-color: #f1959e;
+	font-size: 18px;
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#jmhz .jmhz-contact {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#jmhz .jmhz-contact-item {
+	float: left;
+	width: calc(50% - 40px);
+	margin-right: 80px;
+}
+
+#jmhz .jmhz-contact h3 {
+	text-align: center;
+	font: 28px/40px "微软雅黑";
+	color: #f19ba4;
+	margin: 48px 0 24px;
+}
+
+#jmhz .jmhz-contact-item:nth-last-child(1) {
+	margin-right: 0;
+}
+
+#jmhz .jmhz-contact-item span{
+	float: left;
+	display: block;
+	line-height: 3;
+	font-size: 20px;
+	font-weight: bold;
+	color: #f1959e;
+}
+
+#jmhz .jmhz-contact-item div {
+	float: left;
+	margin-left: 20px;
+}
+
+#jmhz .jmhz-contact-item div p {
+	font-size: 14px;
+	line-height: 2.5;
+}
+
+@media only screen and (max-width:62.25em) {
+	#jmhz .jmhz-contact {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#jmhz .jmhz-contact-item span {
+		float: none;
+		display: block;
+		line-height: 2;
+	}
+	#jmhz .jmhz-contact-item div {
+		margin-left: 0;
+	}
+	#jmhz .jmhz-contact-item div p {
+		line-height: 1.5;
+	}
+}
+@media only screen and (max-width:30em) {
+	#jmhz .jmhz-contact-item {
+		float: none;
+		width: 90%;
+		margin: 0 auto 20px !important;
+	}
+
+}
+
+

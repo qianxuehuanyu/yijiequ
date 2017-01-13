@@ -1,8 +1,9 @@
 #side-bar {
     position: fixed;
-    right: 10px;
-    bottom: 70px;
+    right: 5px;
+    bottom: 5px;
     width: 110px;
+    z-index: 9999;
 }
 
 #side-bar ul {
@@ -117,7 +118,7 @@
     }
 }
 
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 50em) {
     #side-bar {
         display: none;
     }

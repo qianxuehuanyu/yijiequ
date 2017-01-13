@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family:"宋体",'Microsoft YaHei';
 }
 
 <<<<<<< HEAD
@@ -45,6 +46,7 @@
         width: 100%;
         height: 80px;
         border-bottom: 1px solid #f8f8f8;
+        box-shadow: 0 0 5px #f8f8f8;
         background-color: #fff;
         z-index: 999999999;
     }
@@ -57,15 +59,32 @@
     margin-top:10px;
 margin-right: 120px;
 }
+    .btn{
+     width: 40px;
+        height: 40px;
+border-radius: 50%;
+        background: url("/images/header/jiantou_f.jpg")no-repeat center;
+        background-size: 100%;
+        position: fixed;
+        right: 65px;
+        top: 20px;
+    }
+    .btn:hover{
+        border: 2px solid #00ab88;
+    }
 ul{
-    line-height: 80px
-
+    line-height: 80px;
+    float: right;
 }
 li{
     float: left;
-    padding:0 20px;
+    padding:0 10px;
     a {
         color: #000;
+        padding: 10px;
+    }
+    .bottom-border{
+        border-bottom: 3px solid #00ab88;
     }
 }
 }

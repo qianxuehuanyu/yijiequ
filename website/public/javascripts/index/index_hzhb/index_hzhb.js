@@ -10,7 +10,6 @@ $(document).ready(function () {
     var hz=$(".hezuo");
     var wy=$(".wuye");
 
-    console.log(hzsj);
         sysj[0].onclick=function () {
             sy[0].style.display="block";
             hz[0].style.display="none";

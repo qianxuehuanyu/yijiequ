@@ -10,11 +10,41 @@
 	<div class="case_box">
 	<!-- 案例超链接与图片 -->
 		<div class="siteList">
-			<!-- <% for(var i=0;i<displayCity.length;i++){%> -->
-				<a href="#"><%= displayCity.length%></a>
-			<!-- <%} %> -->
+			<% var mykind = theKind.kind %>
+			<% var key = 0;var arrCity=["全部","上海","北京","大连","天津","沈阳","深圳","赤峰"]; %>
+			<% for(var i=arrCity.length-1;i>=0;i--){
+				if(mykind.indexOf(arrCity[i])!=-1) {key=i;}
+			} %>
+			<% for(var i=0;i<Content.cityList.length;i++){ %>
+				<% var mycity=Content.cityList[i].city; %>
+				<% mycity=mycity+""; %>
+				<% if(mycity==String(arrCity[key])){ %>
+				<span class="now">
+					<%= mycity %>
+				</span>
+				<% }else{ %>
+				<span class="">
+					<%= mycity %>
+				</span>
+				<% } %>
+			<% } %>
 		</div>
-		<div class="case_img"></div>
+
+		<div class="case_img">
+			<% for (var i=0;i<Content.uploadYxal.length;i++){ %>
+			<!-- <% console.log(Content.uploadYxal); %> -->
+				<% if (Content.uploadYxal[i].display){ %>
+					<div class="case_img_style">
+						<a href="#" class="a_img">
+							<img src="<%= Content.uploadYxal[i].image_href %>" alt="">
+							<span><%= Content.uploadYxal[i].city %></span>
+						</a>
+						<a href="#" class="a_word"><%= Content.uploadYxal[i].title %></a>
+					</div>
+				<% } %>
+			<% } %>
+		</div>
+
 		<a href="#" class="more_case">查看全部案例</a>
 		<!-- 视频 -->
 		<div class="case_video">
