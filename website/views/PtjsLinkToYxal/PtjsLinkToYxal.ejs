@@ -1,0 +1,33 @@
+<% include ../header.ejs %>
+
+    <!--各页面自己的css和js-->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/PtjsLinkToYxal/PtjsLinkToYxal.css">
+
+<% include ../nav.ejs %>
+
+    <!--页面主体-->
+	<div class="banner"></div>
+	<div class="case_box">
+	<!-- 案例超链接与图片 -->
+		<div class="siteList">
+			<!-- <% for(var i=0;i<displayCity.length;i++){%> -->
+				<a href="#"><%= displayCity.length%></a>
+			<!-- <%} %> -->
+		</div>
+		<div class="case_img"></div>
+		<a href="#" class="more_case">查看全部案例</a>
+		<!-- 视频 -->
+		<div class="case_video">
+			<video controls="controls" src=""></video>
+		</div>
+		<!-- 介绍 -->
+		<div class="case_intro">
+			<div class="case_intro_title">亿街区，一站式智慧物业解决方案</div>
+			<p class="case_intro_word">亿街区致力于为物业公司打造智慧物业和提升社区服务品质，提供全方位的智慧物业服务系统、运营服务、数据服务、管理培训和顾问咨询服务等一站式解决方案，帮助物业公司改善经营状况，实现提高人工效能、增加经营收益、提高服务品质，快速、高效的实现物业服务管理智慧化。</p>
+			<p class="case_intro_word">亿街区现覆盖全国四大区域、20个主力城市、上百个中高端住宅项目、覆盖客户超过60万人。可实现物业通知、物业费代缴、智能门禁、工程报修、快递代收发、项目核查、维修抢单、问卷调查、社区商城、各种到家服务、跳蚤市场等十余大功能板块，远洋集团所有项目已全部使用亿街区平台所有功能。</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="/javascripts/PtjsLinkToYxal/PtjsLinkToYxal.js"></script>
+<!-- ttt -->
+
+<% include ../footer.ejs %>

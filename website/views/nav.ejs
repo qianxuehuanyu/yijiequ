@@ -1,17 +1,22 @@
 </head>
 <body>
 <div id="header">
-  <div class="nav">
-    <img class="log" src="/images/header/logo.png">
-    <ul>
-      <li><a href="#">平台介绍</a></li>
-      <li><a href="#">平台介绍</a></li>
-      <li><a href="#">平台介绍</a></li>
-      <li><a href="#">平台介绍</a></li>
-      <li><a href="#">平台介绍</a></li>
-      <li><a href="#">平台介绍</a></li>
-      <li><a href="#">平台介绍</a></li>
-      <li><a href="#">平台介绍</a></li>
-    </ul>
+  <div class="margin_top">
+    <div class="nav">
+
+      <a href="/index.html">
+        <img class="log" src="/images/header/logo.png">
+      </a>
+      <ul>
+        <% for(let i=1;i<Content.navUrl.length;i++){ %>
+        <li>
+          <a href="<%= Content.navUrl[i].url %>">
+            <%= Content.navUrl[i].about %>
+          </a>
+        </li>
+        <% } %>
+      </ul>
+    </div>
   </div>
+
 </div>

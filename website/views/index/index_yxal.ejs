@@ -4,12 +4,17 @@
             <h1>优秀案例</h1>
         </div>
         <div class="yxal_block">
-            <a href="#" style="background:url('public/images/1480997604003.jpg')"></a>
-            <a href="#" style="background:url('public/images/1480997817147.jpg')"></a>
-            <a href="#" style="background-image:url('public/images/1480998081040.jpg')"></a>
-            <a href="#" style="background-image:url('public/images/1480998222261.jpg')"></a>
-            <a href="#" style="background-image:url('public/images/1480998361574.jpg')"></a>
-            <a href="#" style="background-image:url('public/images/1481184917018.jpg')"></a>
+            <% for(var i=0;i<6;i++){ %>
+                <a href="<%= Content.indexUrl[1].url %>?id=<%= Content.uploadYxal[i].url_id %>" style="background:url('<%=  Content.uploadYxal[i].image_href %>');background-size:cover;">
+                    <div class="blockhover"></div>
+                    <div class="yxal_text">
+                        <p><%=  Content.uploadYxal[i].title %></p>
+                        <div class="none">
+                            <span>查看详情</span>
+                        </div>
+                    </div>
+                </a>
+            <% } %>
         </div>
     </div>
 </div>

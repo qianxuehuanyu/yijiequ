@@ -1,0 +1,65 @@
+body {
+  font-family: "Microsoft YaHei"; }
+
+#yxal {
+  width: 1243px;
+  background: #fff;
+  margin: auto; }
+  #yxal .yxalConter {
+    width: 1136px;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto; }
+    #yxal .yxalConter .yxal_title {
+      text-align: center; }
+      #yxal .yxalConter .yxal_title h1 {
+        color: #26d7bd;
+        margin: 23px 0 15px 0;
+        font-size: 35px;
+        letter-spacing: 5px;
+        line-height: 40px; }
+    #yxal .yxalConter .yxal_block a {
+      display: block;
+      width: 358px;
+      height: 250px;
+      margin: 0 8px 10px;
+      float: left;
+      position: relative; }
+      #yxal .yxalConter .yxal_block a .blockhover {
+        position: absolute;
+        width: 358px;
+        height: 250px;
+        background: #000;
+        opacity: 0.3; }
+      #yxal .yxalConter .yxal_block a .yxal_text {
+        position: absolute;
+        width: 272px;
+        height: 101px;
+        top: 45px;
+        left: 43px;
+        overflow: hidden;
+        padding-top: 30px; }
+        #yxal .yxalConter .yxal_block a .yxal_text p {
+          height: 70px;
+          width: 272px;
+          font-size: 25px;
+          line-height: 35px;
+          font-weight: 900;
+          color: #fff; }
+        #yxal .yxalConter .yxal_block a .yxal_text .none {
+          display: none; }
+        #yxal .yxalConter .yxal_block a .yxal_text span {
+          padding-top: 5px;
+          text-align: center;
+          width: 272px;
+          display: inline-block;
+          font-size: 14px;
+          color: #fff;
+          border-top: 1px solid #fff; }
+    #yxal .yxalConter .yxal_block a:hover .yxal_text {
+      padding-top: 0; }
+    #yxal .yxalConter .yxal_block a:hover .none {
+      display: block; }
+
+/*# sourceMappingURL=index_yxal.css.map */

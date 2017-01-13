@@ -1,0 +1,46 @@
+#hzhb {
+  width: 1136px;
+  margin: 0 auto; }
+  #hzhb h1 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    color: #b8b8b8; }
+  #hzhb h4 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    color: #26d7bd; }
+  #hzhb p {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    color: #b8b8b8; }
+  #hzhb .shangjia {
+    width: 500px;
+    height: 80px;
+    margin-left: 368px; }
+    #hzhb .shangjia li {
+      float: left;
+      margin: 0 20px;
+      font-size: 20px;
+      color: #b8b8b8; }
+    #hzhb .shangjia .index_hzhb_colorAndBorder {
+      color: #00ab88;
+      border-bottom: 3px solid #00ab88; }
+  #hzhb .suoyou, #hzhb .hezuo, #hzhb .wuye {
+    width: 100%; }
+    #hzhb .suoyou li, #hzhb .hezuo li, #hzhb .wuye li {
+      width: 225px;
+      height: 140px;
+      float: left; }
+      #hzhb .suoyou li img, #hzhb .hezuo li img, #hzhb .wuye li img {
+        width: 200px;
+        height: 120px;
+        margin: 0 10px 10px 0; }
+      #hzhb .suoyou li img:hover, #hzhb .hezuo li img:hover, #hzhb .wuye li img:hover {
+        transform: scale(1.2); }
+  #hzhb .hezuo, #hzhb .wuye {
+    display: none; }
+
+/*# sourceMappingURL=index_hzhb.css.map */
